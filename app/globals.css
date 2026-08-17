@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary-blue: #1678b8;
+  --color-deep-blue: #0b4267;
+  --color-verify-green: #4faf46;
+  --color-dark: #111111;
+  --color-grey: #6b7075;
+  --color-off-white: #f6f8f7;
+  --color-white: #ffffff;
+
+  --header-height: 84px;
+  --header-height-compact: 64px;
+}
+
+@theme inline {
+  --color-primary-blue: var(--color-primary-blue);
+  --color-deep-blue: var(--color-deep-blue);
+  --color-verify-green: var(--color-verify-green);
+  --color-dark: var(--color-dark);
+  --color-grey: var(--color-grey);
+  --color-off-white: var(--color-off-white);
+
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: var(--font-plex-mono), "Courier New", monospace;
+  --font-signature: var(--font-caveat), cursive;
+
+  --breakpoint-xs: 480px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-off-white);
+    color: var(--color-dark);
+  }
+
+  ::selection {
+    background: var(--color-primary-blue);
+    color: var(--color-white);
+  }
+}
+
+/* Subtle architectural blueprint grid — used behind the hero, never a gradient. */
+.blueprint-grid {
+  background-image:
+    linear-gradient(to right, rgba(11, 66, 103, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(11, 66, 103, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.blueprint-grid-fine {
+  background-image:
+    linear-gradient(to right, rgba(11, 66, 103, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(11, 66, 103, 0.035) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+/* Hides the scrollbar on touch carousels (Features section) while keeping native scroll/snap. */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
