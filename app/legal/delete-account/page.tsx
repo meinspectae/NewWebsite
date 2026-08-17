@@ -17,7 +17,7 @@ const STEPS = [
   },
   {
     number: 2,
-    text: 'By email: If you no longer have access to the app, send an email to hello@meinspect.com from the address linked to your account, with the subject line "Delete My Account". Include your registered name and phone/WhatsApp number so we can verify your identity.',
+    text: 'By email: If you no longer have access to the app, send an email to meinspect.ae@gmail.com from the address linked to your account, with the subject line "Delete My Account". Include your registered name and phone/WhatsApp number so we can verify your identity.',
   },
   {
     number: 3,
@@ -110,12 +110,12 @@ export default function DeleteAccountPage() {
 
             <p className="mt-6 text-[14.5px] leading-relaxed text-grey">
               If you would like a copy of your data before requesting deletion, or have questions about what is
-              retained, contact us at hello@meinspect.com before submitting your request.
+              retained, contact us at meinspect.ae@gmail.com before submitting your request.
             </p>
 
             <h2 className="mt-10 text-[17px] font-bold text-dark sm:text-[18px]">Questions?</h2>
             <p className="mt-3 text-[14.5px] leading-relaxed text-grey">
-              For anything else about your account or this process, reach out to us at hello@meinspect.com, or read
+              For anything else about your account or this process, reach out to us at meinspect.ae@gmail.com, or read
               our Privacy Policy for more on how we handle your data.
             </p>
           </div>

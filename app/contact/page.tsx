@@ -27,8 +27,8 @@ export default function ContactPage() {
               <p className="mt-5 max-w-[42ch] text-[15.5px] leading-relaxed text-grey">
                 Questions about the app, agency pricing, or a partnership? Drop us a message and we&apos;ll get back
                 to you within 24 hours, or email us directly at{" "}
-                <a href="mailto:hello@meinspect.com" className="font-semibold text-primary-blue hover:text-deep-blue">
-                  hello@meinspect.com
+                <a href="mailto:meinspect.ae@gmail.com" className="font-semibold text-primary-blue hover:text-deep-blue">
+                  meinspect.ae@gmail.com
                 </a>
                 .
               </p>
