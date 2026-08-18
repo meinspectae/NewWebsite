@@ -29,12 +29,12 @@ export function Navbar() {
           <Image
             src="/logo.png"
             alt="MeInspect"
-            width={48}
-            height={48}
+            width={64}
+            height={64}
             className={`origin-left transition-transform duration-300 ${scrolled ? "scale-[0.88]" : "scale-100"}`}
             priority
           />
-          <span className="text-[18px] font-semibold tracking-tight text-dark sm:text-[19px]">
+          <span className="text-[21px] font-semibold tracking-tight text-dark sm:text-[23px]">
             Me<span className="text-primary-blue">Inspect</span>
           </span>
         </Link>

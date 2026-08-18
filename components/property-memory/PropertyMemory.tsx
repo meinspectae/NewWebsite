@@ -50,9 +50,9 @@ export function PropertyMemory() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-8">
           <h2 className="shrink-0 text-[30px] font-semibold leading-[1.18] tracking-tight text-dark sm:text-[36px] lg:w-[230px] lg:text-[26px] xl:w-[320px] xl:text-[36px]">
-            Your property doesn&apos;t remember.
+            In case of a dispute,
             <br />
-            <span className="text-primary-blue">MeInspect</span> does.
+            <span className="text-primary-blue">evidence</span> wins not memory
           </h2>
 
           <div className="flex flex-col items-center gap-8 lg:flex-1 lg:flex-row lg:justify-between lg:gap-2">

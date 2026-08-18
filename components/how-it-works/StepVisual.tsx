@@ -2,10 +2,11 @@ import { Circle } from "lucide-react";
 import type { HowItWorksStep } from "@/lib/constants/howItWorks";
 
 const SETUP_FIELDS = ["Property name", "Unit", "Tenant", "Landlord", "Inspection date"];
-const SIGNATORIES = ["Tenant", "Landlord", "Agent"];
-
-const SIGNATURE_PATH =
-  "M4 18 C9 6,13 24,19 13 S29 2,35 15 S45 22,51 9 S61 2,67 15 S77 22,83 10";
+const SIGNATORIES = [
+  { role: "Tenant", name: "Adam" },
+  { role: "Landlord", name: "Eve" },
+  { role: "Agent", name: "Tom" },
+];
 
 function SetupVisual() {
   return (
@@ -50,22 +51,18 @@ function PhotographVisual() {
 function SignaturesVisual() {
   return (
     <div className="flex h-full w-full flex-col justify-center gap-3.5 p-3.5">
-      {SIGNATORIES.map((role) => (
+      {SIGNATORIES.map(({ role, name }) => (
         <div key={role} className="flex flex-col gap-1">
           <span className="font-mono text-[6.5px] font-semibold uppercase tracking-wide text-grey">{role}</span>
-          <svg viewBox="0 0 88 26" className="h-4 w-full text-primary-blue">
-            <path
+          <div className="h-4 overflow-hidden">
+            <span
               data-how-sig-path
-              d={SIGNATURE_PATH}
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              pathLength={1}
-              style={{ strokeDasharray: 1, strokeDashoffset: 1 }}
-            />
-          </svg>
+              className="block font-signature text-[16px] leading-none text-primary-blue"
+              style={{ clipPath: "inset(0 100% 0 0)" }}
+            >
+              {name}
+            </span>
+          </div>
           <div className="h-px w-full bg-dark/15" />
         </div>
       ))}

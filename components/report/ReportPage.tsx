@@ -12,8 +12,8 @@ import {
 
 function PageChrome({ page, children }: { page: ReportPageMeta; children: React.ReactNode }) {
   return (
-    <div className="flex h-full w-full flex-col p-6 sm:p-8">
-      <div className="flex items-center justify-between border-b border-dark/10 pb-3">
+    <div className="flex h-full w-full flex-col p-4 sm:p-5">
+      <div className="flex items-center justify-between border-b border-dark/10 pb-2">
         <span className="font-mono text-[9px] font-bold uppercase tracking-[0.14em] text-primary-blue sm:text-[10px]">
           {page.title}
         </span>
@@ -21,7 +21,7 @@ function PageChrome({ page, children }: { page: ReportPageMeta; children: React.
           Page {page.number} / 6
         </span>
       </div>
-      <div className="flex-1 pt-5">{children}</div>
+      <div className="flex-1 pt-3">{children}</div>
     </div>
   );
 }
@@ -29,9 +29,9 @@ function PageChrome({ page, children }: { page: ReportPageMeta; children: React.
 function PropertyPage({ page }: { page: ReportPageMeta }) {
   return (
     <PageChrome page={page}>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-2">
         {PROPERTY_FIELDS.map((field) => (
-          <div key={field.label} className="flex flex-col gap-1 border-b border-dark/8 pb-3">
+          <div key={field.label} className="flex flex-col gap-0.5 border-b border-dark/8 pb-1.5">
             <span className="font-mono text-[9px] font-semibold uppercase tracking-wide text-grey">{field.label}</span>
             <span className="text-[14px] font-semibold text-dark sm:text-[15px]">{field.value}</span>
           </div>
@@ -44,9 +44,9 @@ function PropertyPage({ page }: { page: ReportPageMeta }) {
 function SummaryPage({ page }: { page: ReportPageMeta }) {
   return (
     <PageChrome page={page}>
-      <div className="grid grid-cols-2 gap-3.5">
+      <div className="grid grid-cols-2 gap-2.5">
         {SUMMARY_STATS.map((stat) => (
-          <div key={stat.label} className="rounded-xl border border-dark/8 bg-off-white p-3.5">
+          <div key={stat.label} className="rounded-xl border border-dark/8 bg-off-white p-2.5">
             <span className="block font-mono text-[8.5px] font-semibold uppercase tracking-wide text-grey">
               {stat.label}
             </span>
@@ -61,7 +61,7 @@ function SummaryPage({ page }: { page: ReportPageMeta }) {
 function PhotosPage({ page }: { page: ReportPageMeta }) {
   return (
     <PageChrome page={page}>
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-2">
         {REPORT_ROOMS.map((room, i) => (
           <motion.div
             key={room.name}
@@ -70,11 +70,11 @@ function PhotosPage({ page }: { page: ReportPageMeta }) {
             transition={{ duration: 0.4, delay: 0.1 + i * 0.08, ease: "easeOut" }}
             className="overflow-hidden rounded-lg"
           >
-            <div className="relative aspect-[4/3] w-full">
+            <div className="relative aspect-[16/9] w-full">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={room.photo} alt="" className="h-full w-full object-cover" draggable={false} />
             </div>
-            <span className="mt-1 block text-[9.5px] font-semibold text-dark/70 sm:text-[10.5px]">{room.name}</span>
+            <span className="mt-0.5 block text-[9.5px] font-semibold text-dark/70 sm:text-[10.5px]">{room.name}</span>
           </motion.div>
         ))}
       </div>
@@ -85,11 +85,11 @@ function PhotosPage({ page }: { page: ReportPageMeta }) {
 function ConditionsPage({ page }: { page: ReportPageMeta }) {
   return (
     <PageChrome page={page}>
-      <div className="flex flex-col gap-2.5">
+      <div className="flex flex-col gap-2">
         {CONDITION_RATINGS.map((c) => {
           const good = c.rating === "Good";
           return (
-            <div key={c.room} className="flex items-center justify-between rounded-lg border border-dark/8 bg-off-white px-3.5 py-2.5">
+            <div key={c.room} className="flex items-center justify-between rounded-lg border border-dark/8 bg-off-white px-3 py-2">
               <span className="text-[12.5px] font-semibold text-dark sm:text-[13.5px]">{c.room}</span>
               <span
                 className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[10.5px] font-bold ${
@@ -110,9 +110,9 @@ function ConditionsPage({ page }: { page: ReportPageMeta }) {
 function IssuesPage({ page }: { page: ReportPageMeta }) {
   return (
     <PageChrome page={page}>
-      <div className="flex flex-col gap-2.5">
+      <div className="flex flex-col gap-2">
         {REPORT_ISSUES.map((issue) => (
-          <div key={issue.label} className="flex items-start gap-2.5 rounded-lg border border-dark/8 bg-off-white px-3.5 py-3">
+          <div key={issue.label} className="flex items-start gap-2.5 rounded-lg border border-dark/8 bg-off-white px-3 py-2">
             <AlertTriangle size={14} strokeWidth={2.25} className="mt-0.5 shrink-0 text-primary-blue" />
             <div className="flex flex-col">
               <span className="text-[12.5px] font-semibold text-dark sm:text-[13.5px]">{issue.label}</span>
@@ -128,9 +128,9 @@ function IssuesPage({ page }: { page: ReportPageMeta }) {
 function SignaturesPage({ page }: { page: ReportPageMeta }) {
   return (
     <PageChrome page={page}>
-      <div className="flex flex-col justify-center gap-6">
+      <div className="flex flex-col justify-center gap-3">
         {SIGNATORIES.map((signatory, i) => (
-          <div key={signatory.role} className="flex flex-col gap-1">
+          <div key={signatory.role} className="flex flex-col gap-0.5">
             <span className="font-mono text-[9px] font-semibold uppercase tracking-wide text-grey">
               {signatory.role}
             </span>

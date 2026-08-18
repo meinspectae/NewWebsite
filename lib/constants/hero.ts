@@ -1,8 +1,8 @@
 export const HERO_COPY = {
-  headlinePrefix: "Know ",
-  headlineEmphasis: "exactly",
-  headlineSuffix: " what was there.",
-  subheadline: "Before you move in. Before you move out.",
+  headlinePrefix: "Property Condition Reports for ",
+  headlineEmphasis: "Tenants & Landlords",
+  headlineSuffix: ".",
+  subheadline: "Document your property. Protect your deposit.",
   body: "Photograph it. Verify it. Sign it. Keep the record.",
   trustIndicators: ["GPS Verified", "Time Stamped", "Digitally Signed"],
 } as const;

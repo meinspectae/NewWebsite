@@ -148,13 +148,11 @@ export function TwoSides() {
 
         {/* content overlay — constrained to a readable width, centered on the same seam as the photos */}
         <div className="relative mx-auto h-full max-w-[1560px] px-10 xl:px-14 2xl:px-20">
-          <div ref={leftTextRef} className="absolute left-10 top-9 max-w-[200px] xl:left-14 xl:top-10 xl:max-w-[220px] 2xl:left-20">
-            <div className="pointer-events-none absolute -inset-x-12 -top-12 -bottom-20 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(246,248,247,0.94)_0%,rgba(246,248,247,0.65)_55%,rgba(246,248,247,0)_85%)]" />
+          <div ref={leftTextRef} className="absolute left-10 top-9 max-w-[220px] rounded-2xl bg-white p-4 shadow-[0_16px_36px_-20px_rgba(11,66,103,0.35)] xl:left-14 xl:top-10 xl:max-w-[240px] 2xl:left-20">
             <SidePanel content={TENANT_SIDE} align="left" />
           </div>
 
-          <div ref={rightTextRef} className="absolute right-10 top-9 max-w-[200px] xl:right-14 xl:top-10 xl:max-w-[220px] 2xl:right-20">
-            <div className="pointer-events-none absolute -inset-x-12 -top-12 -bottom-20 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(246,248,247,0.94)_0%,rgba(246,248,247,0.65)_55%,rgba(246,248,247,0)_85%)]" />
+          <div ref={rightTextRef} className="absolute right-10 top-9 max-w-[220px] rounded-2xl bg-white p-4 shadow-[0_16px_36px_-20px_rgba(11,66,103,0.35)] xl:right-14 xl:top-10 xl:max-w-[240px] 2xl:right-20">
             <SidePanel content={LANDLORD_SIDE} align="right" />
           </div>
 

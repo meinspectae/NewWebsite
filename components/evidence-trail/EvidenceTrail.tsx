@@ -112,7 +112,7 @@ export function EvidenceTrail() {
         <div ref={trailRef}>
           {/* desktop / tablet — horizontal trail */}
           <div className="relative mt-16 hidden lg:block xl:mt-20">
-            <div className="pointer-events-none absolute left-0 right-11 top-5 h-px xl:top-[22px]">
+            <div className="pointer-events-none absolute left-0 right-11 top-6 h-px xl:top-7">
               <div className="h-full w-full rounded-full bg-dark/10" />
               <div
                 data-evidence-line="horizontal"
@@ -128,7 +128,7 @@ export function EvidenceTrail() {
 
             <div
               data-evidence-check
-              className="absolute right-0 top-5 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-verify-green opacity-0 shadow-[0_8px_20px_-8px_rgba(79,175,70,0.6)] transition-[opacity,transform] duration-300 ease-out xl:top-[22px] xl:h-9 xl:w-9"
+              className="absolute right-0 top-6 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-verify-green opacity-0 shadow-[0_8px_20px_-8px_rgba(79,175,70,0.6)] transition-[opacity,transform] duration-300 ease-out xl:top-7 xl:h-10 xl:w-10"
               style={{ transform: "translateY(-50%) scale(0.6)" }}
             >
               <CheckCheck size={16} strokeWidth={2.75} className="text-white" />
@@ -137,7 +137,7 @@ export function EvidenceTrail() {
 
           {/* mobile — vertical trail */}
           <div className="relative mt-14 flex flex-col gap-7 lg:hidden">
-            <div className="pointer-events-none absolute bottom-9 left-5 top-1 w-px">
+            <div className="pointer-events-none absolute bottom-9 left-6 top-1 w-px">
               <div className="h-full w-full rounded-full bg-dark/10" />
               <div
                 data-evidence-line="vertical"

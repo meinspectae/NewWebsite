@@ -41,8 +41,8 @@ export function ReportStats() {
   });
 
   return (
-    <div ref={wrapRef} className="flex flex-col items-center gap-8">
-      <div className="grid grid-cols-3 gap-6 sm:gap-10">
+    <div ref={wrapRef} className="flex flex-col items-center gap-6">
+      <div className="grid grid-cols-3 gap-6 sm:gap-8">
         {REPORT_STATS.map((stat, i) => (
           <div
             key={stat.label}

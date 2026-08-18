@@ -1,22 +1,19 @@
 export interface TimelineStage {
   eyebrow: "MOVE IN" | "MOVE OUT";
   eyebrowTone: "green" | "blue";
-  day: string;
-  stats: string[];
+  content: string;
 }
 
 export const MOVE_IN_STAGE: TimelineStage = {
   eyebrow: "MOVE IN",
   eyebrowTone: "green",
-  day: "Day 01",
-  stats: ["128 Photos", "3 Parties Signed", "GPS Verified"],
+  content: "Evidence = Report with Photos, timestamp and location",
 };
 
 export const MOVE_OUT_STAGE: TimelineStage = {
   eyebrow: "MOVE OUT",
   eyebrowTone: "blue",
-  day: "Day 364",
-  stats: ["142 Photos", "Damage Comparison", "Final Report"],
+  content: "Memory = I remember I reported this to the landlord",
 };
 
 export interface DiffMarker {

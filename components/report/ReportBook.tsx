@@ -50,8 +50,8 @@ export function ReportBook() {
   };
 
   return (
-    <div className="mx-auto w-full max-w-[380px] sm:max-w-[420px]">
-      <div style={{ perspective: 1800 }} className="relative aspect-[3/4] w-full">
+    <div className="mx-auto w-full max-w-[330px] shrink-0 lg:max-w-[440px]">
+      <div style={{ perspective: 1800 }} className="relative aspect-[3/4] w-full lg:aspect-[4/3.2]">
         <AnimatePresence custom={direction} mode="wait">
           <motion.div
             key={page}

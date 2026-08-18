@@ -82,7 +82,10 @@ export function Hero() {
             {HERO_COPY.body}
           </motion.p>
 
-          <motion.div initial="hidden" animate="show" custom={3} variants={fadeUp} className="mt-8">
+          {/* desktop — store badges sit here in the copy column; on mobile
+              they move below the 3D visual instead (see after the visual
+              column), so hide this instance below lg */}
+          <motion.div initial="hidden" animate="show" custom={3} variants={fadeUp} className="mt-8 hidden lg:block">
             <StoreBadges />
           </motion.div>
 
@@ -108,6 +111,11 @@ export function Hero() {
         {/* 3D visual column */}
         <div className="relative h-[440px] w-full shrink-0 sm:h-[520px] lg:h-[86vh] lg:w-[64%]">
           <HeroVisual progressRef={progressRef} isMobile={isMobile} isTablet={isTablet} />
+        </div>
+
+        {/* mobile — store badges after the 3D visual */}
+        <div className="px-6 pb-10 lg:hidden">
+          <StoreBadges />
         </div>
       </div>
     </section>

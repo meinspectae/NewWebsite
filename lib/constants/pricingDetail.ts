@@ -33,13 +33,15 @@ export const PRICING_DETAIL_TIERS: PricingDetailTier[] = [
     cta: "Join the Waiting List",
     href: "/start",
     footnote: "Document everything yourself using the app. Pay only when you're ready to generate your official report.",
+    recommended: true,
   },
   {
     id: "inspector",
     icon: "inspector",
     theme: "blue",
     title: "Hire a MeInspector",
-    priceLabel: "Contact for pricing",
+    priceLabel: "From AED 499",
+    priceSub: "/ inspection",
     features: [
       "A trained Meinspector visits and does the walkthrough for you",
       "Full room-by-room photo documentation",
@@ -52,13 +54,12 @@ export const PRICING_DETAIL_TIERS: PricingDetailTier[] = [
     cta: "Book a MeInspector",
     href: "/book",
     footnote: "Perfect if you'd rather have a professional handle the entire inspection for you.",
-    recommended: true,
   },
   {
     id: "portfolio",
     icon: "portfolio",
     theme: "blue",
-    title: "Holiday Homes",
+    title: "Property Managers & Holiday Homes",
     priceLabel: "Custom Pricing",
     features: [
       "Tailored plans for short-term & holiday-home portfolios",

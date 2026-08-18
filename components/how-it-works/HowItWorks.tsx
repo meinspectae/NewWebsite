@@ -91,12 +91,12 @@ export function HowItWorks() {
               corner.style.transform = `scale(${0.5 + p * 0.5})`;
             });
 
-            // step 3 — each signature draws itself in its own third of the band
-            const sigPaths = card.querySelectorAll<SVGPathElement>("[data-how-sig-path]");
-            sigPaths.forEach((path, si) => {
-              const bandW = 1 / sigPaths.length;
+            // step 3 — each signature wipes in within its own third of the band
+            const sigNames = card.querySelectorAll<HTMLElement>("[data-how-sig-path]");
+            sigNames.forEach((el, si) => {
+              const bandW = 1 / sigNames.length;
               const p = Math.min(1, Math.max(0, (local - si * bandW) / bandW));
-              path.style.strokeDashoffset = String(1 - p);
+              el.style.clipPath = `inset(0 ${(1 - p) * 100}% 0 0)`;
             });
 
             // step 4 — report pages fan into their resting stack, staggered
@@ -127,9 +127,9 @@ export function HowItWorks() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-[30px] font-semibold leading-[1.12] tracking-tight text-dark sm:text-[38px] lg:text-[44px]">
-            Simple in 4 steps.
+            Four steps.
             <br />
-            <span className="text-primary-blue">Powerful in result.</span>
+            <span className="text-primary-blue">Zero Disputes</span>
           </h2>
         </div>
 

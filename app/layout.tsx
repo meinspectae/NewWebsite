@@ -23,9 +23,9 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "MeInspect — Know exactly what was there.",
+  title: "MeInspect — Property Condition Reports for Tenants & Landlords.",
   description:
-    "Property condition reports with photo evidence, GPS verification, timestamps, and digital signatures. Before you move in. Before you move out.",
+    "Document your property. Protect your deposit. Property condition reports with photo evidence, GPS verification, timestamps, and digital signatures.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
