@@ -3,9 +3,9 @@ import type { HowItWorksStep } from "@/lib/constants/howItWorks";
 
 const SETUP_FIELDS = ["Property name", "Unit", "Tenant", "Landlord", "Inspection date"];
 const SIGNATORIES = [
-  { role: "Tenant", name: "Adam" },
-  { role: "Landlord", name: "Eve" },
-  { role: "Agent", name: "Tom" },
+  { role: "Tenant", name: "Mohammed Ahmed" },
+  { role: "Landlord", name: "Sarah Johnson" },
+  { role: "Agent", name: "M.Chen" },
 ];
 
 function SetupVisual() {
@@ -57,7 +57,7 @@ function SignaturesVisual() {
           <div className="h-4 overflow-hidden">
             <span
               data-how-sig-path
-              className="block font-signature text-[16px] leading-none text-primary-blue"
+              className="block whitespace-nowrap font-signature text-[13px] leading-none text-primary-blue"
               style={{ clipPath: "inset(0 100% 0 0)" }}
             >
               {name}
@@ -77,6 +77,7 @@ const PAGE_REST = [
 ];
 
 function ReportVisual() {
+  const topIndex = PAGE_REST.length - 1;
   return (
     <div className="relative flex h-full w-full items-center justify-center">
       {PAGE_REST.map((rest, i) => (
@@ -86,16 +87,18 @@ function ReportVisual() {
           data-rest-rotate={rest.rotate}
           data-rest-x={rest.x}
           data-rest-y={rest.y}
-          className="absolute h-[72%] w-[58%] rounded-lg border border-dark/10 bg-white p-2 shadow-[0_10px_26px_-14px_rgba(17,17,17,0.35)]"
+          className="absolute h-[72%] w-[58%] overflow-hidden rounded-lg border border-dark/10 bg-white shadow-[0_10px_26px_-14px_rgba(17,17,17,0.35)]"
           style={{ zIndex: i }}
         >
-          <div className="flex flex-col gap-1.5">
-            <div className="h-1.5 w-3/5 rounded-full bg-primary-blue/70" />
-            <div className="h-1 w-full rounded-full bg-dark/10" />
-            <div className="h-1 w-4/5 rounded-full bg-dark/10" />
-            <div className="h-1 w-full rounded-full bg-dark/10" />
-            <div className="mt-1 h-1 w-2/3 rounded-full bg-dark/10" />
-          </div>
+          {i === topIndex ? (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img
+              src="/how-it-works-report.png"
+              alt=""
+              className="h-full w-full object-cover object-top"
+              draggable={false}
+            />
+          ) : null}
         </div>
       ))}
     </div>

@@ -59,9 +59,9 @@ export interface Signatory {
 }
 
 export const SIGNATORIES: Signatory[] = [
-  { role: "Tenant", name: "Adam" },
-  { role: "Landlord", name: "Eve" },
-  { role: "Agent", name: "Tom" },
+  { role: "Tenant", name: "Mohammed Ahmed" },
+  { role: "Landlord", name: "Sarah Johnson" },
+  { role: "Agent", name: "M.Chen" },
 ];
 
 export interface ReportStat {

@@ -82,9 +82,9 @@ export function Hero() {
             {HERO_COPY.body}
           </motion.p>
 
-          {/* desktop — store badges sit here in the copy column; on mobile
-              they move below the 3D visual instead (see after the visual
-              column), so hide this instance below lg */}
+          {/* desktop — store badges and trust indicators sit here in the
+              copy column; on mobile both move below the 3D visual instead
+              (see after the visual column), so hide these instances below lg */}
           <motion.div initial="hidden" animate="show" custom={3} variants={fadeUp} className="mt-8 hidden lg:block">
             <StoreBadges />
           </motion.div>
@@ -94,7 +94,7 @@ export function Hero() {
             animate="show"
             custom={4}
             variants={fadeUp}
-            className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-2.5"
+            className="mt-9 hidden flex-wrap items-center gap-x-6 gap-y-2.5 lg:flex"
           >
             {HERO_COPY.trustIndicators.map((label, i) => {
               const Icon = TRUST_ICONS[i];
@@ -109,13 +109,24 @@ export function Hero() {
         </div>
 
         {/* 3D visual column */}
-        <div className="relative h-[440px] w-full shrink-0 sm:h-[520px] lg:h-[86vh] lg:w-[64%]">
+        <div className="relative h-[340px] w-full shrink-0 sm:h-[460px] lg:h-[86vh] lg:w-[64%]">
           <HeroVisual progressRef={progressRef} isMobile={isMobile} isTablet={isTablet} />
         </div>
 
-        {/* mobile — store badges after the 3D visual */}
-        <div className="px-6 pb-10 lg:hidden">
+        {/* mobile — store badges + trust indicators after the 3D visual */}
+        <div className="flex flex-col items-center gap-5 px-6 pb-10 lg:hidden">
           <StoreBadges />
+          <ul className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+            {HERO_COPY.trustIndicators.map((label, i) => {
+              const Icon = TRUST_ICONS[i];
+              return (
+                <li key={label} className="flex items-center gap-1.5">
+                  <Icon size={14} className="text-verify-green" strokeWidth={2.25} />
+                  <span className="font-mono text-[11.5px] font-medium text-dark/75">{label}</span>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </section>
