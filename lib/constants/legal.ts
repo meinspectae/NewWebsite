@@ -114,7 +114,7 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
     blocks: [
       {
         type: "paragraph",
-        text: "If you have questions about this Privacy Policy or how we handle your data, please contact us at meinspect.ae@gmail.com.",
+        text: "If you have questions about this Privacy Policy or how we handle your data, please contact us at hello@meinspect.com.",
       },
     ],
   },
@@ -249,7 +249,7 @@ export const TERMS_SECTIONS: LegalSection[] = [
     number: 13,
     title: "Contact Us",
     blocks: [
-      { type: "paragraph", text: "If you have questions about these Terms, please contact us at meinspect.ae@gmail.com." },
+      { type: "paragraph", text: "If you have questions about these Terms, please contact us at hello@meinspect.com." },
     ],
   },
 ];
