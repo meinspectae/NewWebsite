@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# wrangler
+/.wrangler/
+
 # local Claude Code tool config (machine-specific, not part of the app)
 /.claude/
 
