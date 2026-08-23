@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://meinspect.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://meinspect.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://meinspect.com/for-tenants</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://meinspect.com/for-landlords</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://meinspect.com/for-agents</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://meinspect.com/for-holiday-homes</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://meinspect.com/pricing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://meinspect.com/resources</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meinspect.com/resources/move-in-checklist</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://meinspect.com/resources/deposit-dispute-guide</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://meinspect.com/resources/report-template</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://meinspect.com/faq</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://meinspect.com/about</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://meinspect.com/contact</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://meinspect.com/careers/meinspector</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://meinspect.com/start</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meinspect.com/book</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meinspect.com/legal/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://meinspect.com/legal/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://meinspect.com/legal/delete-account</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
