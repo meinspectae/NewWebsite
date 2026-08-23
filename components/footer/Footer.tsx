@@ -72,7 +72,7 @@ export function Footer() {
                   aria-label={label}
                   className="flex h-8 w-8 items-center justify-center rounded-full border border-dark/10 text-dark/60 transition-colors hover:border-primary-blue hover:text-primary-blue"
                 >
-                  <Icon size={15} strokeWidth={2} />
+                  <Icon />
                 </Link>
               ))}
             </div>
