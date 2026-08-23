@@ -22,10 +22,29 @@ const caveat = Caveat({
   display: "swap",
 });
 
+const title = "MeInspect — Property Condition Reports for UAE";
+const description =
+  "Document your property. Protect your deposit. Property condition reports with photo evidence, GPS verification, timestamps, and digital signatures.";
+
 export const metadata: Metadata = {
-  title: "MeInspect — Property Condition Reports for Tenants & Landlords.",
-  description:
-    "Document your property. Protect your deposit. Property condition reports with photo evidence, GPS verification, timestamps, and digital signatures.",
+  metadataBase: new URL("https://meinspect.com"),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: "https://meinspect.com",
+    siteName: "MeInspect",
+    images: [{ url: "/logo.png", width: 512, height: 512 }],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/logo.png"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
