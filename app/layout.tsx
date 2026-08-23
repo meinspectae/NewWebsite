@@ -47,10 +47,28 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "MeInspect",
+  url: "https://meinspect.com",
+  logo: "https://meinspect.com/logo.png",
+  sameAs: [
+    "https://www.linkedin.com/company/meinspect/",
+    "https://www.instagram.com/me.inspect",
+  ],
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${inter.variable} ${plexMono.variable} ${caveat.variable} antialiased`}>
-      <body className="bg-off-white text-dark font-sans">{children}</body>
+      <body className="bg-off-white text-dark font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
