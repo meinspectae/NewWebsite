@@ -7,6 +7,7 @@ import { ResourceCard } from "@/components/marketing/ResourceCard";
 import { InfoBand } from "@/components/marketing/InfoBand";
 import { ClosingCta } from "@/components/marketing/ClosingCta";
 import { RESOURCE_GUIDES } from "@/lib/constants/guides";
+import { BLOG_GUIDES } from "@/lib/constants/blogGuides";
 
 export const metadata: Metadata = {
   title: "Resource Hub — Move-In Checklists, Deposit Guides & Templates | MeInspect",
@@ -29,6 +30,20 @@ export default function ResourcesPage() {
         <Section eyebrow="Cornerstone Guides" title="Start here." tone="white" wide>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
             {RESOURCE_GUIDES.map((guide) => (
+              <ResourceCard
+                key={guide.slug}
+                tag={guide.tag}
+                title={guide.cardTitle}
+                description={guide.cardDescription}
+                href={`/resources/${guide.slug}`}
+              />
+            ))}
+          </div>
+        </Section>
+
+        <Section eyebrow="Articles" title="More from MeInspect." tone="off-white" wide>
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+            {BLOG_GUIDES.map((guide) => (
               <ResourceCard
                 key={guide.slug}
                 tag={guide.tag}
