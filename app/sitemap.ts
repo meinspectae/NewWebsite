@@ -3,7 +3,7 @@ export const dynamic = "force-static";
 import type { MetadataRoute } from "next";
 import { STATIC_ROUTES } from "@/lib/seo/routes";
 import { LOCATIONS } from "@/lib/constants/locations";
-import { getAllPosts } from "@/lib/blog/posts";
+import { BLOG_GUIDES } from "@/lib/constants/blogGuides";
 
 const BASE_URL = "https://meinspect.com";
 
@@ -26,12 +26,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const blogEntries: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
-    url: `${BASE_URL}/blog/${post.slug}`,
-    lastModified: post.updatedAt ?? post.publishedAt,
+  // The original 3 guides (move-in-checklist etc.) are already listed in
+  // STATIC_ROUTES above — only the new articles need adding here.
+  const articleEntries: MetadataRoute.Sitemap = BLOG_GUIDES.map((guide) => ({
+    url: `${BASE_URL}/resources/${guide.slug}`,
     changeFrequency: "monthly",
     priority: 0.6,
   }));
 
-  return [...staticEntries, ...locationEntries, ...blogEntries];
+  return [...staticEntries, ...locationEntries, ...articleEntries];
 }
