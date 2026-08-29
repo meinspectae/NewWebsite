@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { PageHero } from "@/components/marketing/PageHero";
@@ -8,11 +9,12 @@ import { FaqAccordion } from "@/components/marketing/FaqAccordion";
 import { ClosingCta } from "@/components/marketing/ClosingCta";
 import { AGENTS_HERO, AGENTS_WHY, AGENTS_WHY_FEATURES, AGENTS_FAQ, AGENTS_CLOSING } from "@/lib/constants/forAgents";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Property Condition Reports for Agents & Property Managers | MeInspect",
   description:
     "Standardise every handover across your portfolio — the same photo record, the same rating scale, the same three-party sign-off, every time.",
-};
+  path: "/for-agents",
+});
 
 export default function ForAgentsPage() {
   return (

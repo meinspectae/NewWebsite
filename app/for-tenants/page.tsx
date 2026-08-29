@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { PageHero } from "@/components/marketing/PageHero";
@@ -18,11 +19,12 @@ import {
   TENANTS_CLOSING,
 } from "@/lib/constants/forTenants";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Property Condition Reports for Tenants — Protect Your Deposit | MeInspect",
   description:
     "A tenant move-in checklist with GPS-tagged, timestamped photos — the single best thing you can do to protect your deposit.",
-};
+  path: "/for-tenants",
+});
 
 export default function ForTenantsPage() {
   return (

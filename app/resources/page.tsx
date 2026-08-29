@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { PageHero } from "@/components/marketing/PageHero";
@@ -9,10 +10,11 @@ import { ClosingCta } from "@/components/marketing/ClosingCta";
 import { RESOURCE_GUIDES } from "@/lib/constants/guides";
 import { BLOG_GUIDES } from "@/lib/constants/blogGuides";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Resource Hub — Move-In Checklists, Deposit Guides & Templates | MeInspect",
   description: "Free, practical resources for documenting a rental property properly — checklists, dispute guides, and templates.",
-};
+  path: "/resources",
+});
 
 export default function ResourcesPage() {
   return (

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/navbar/Navbar";
@@ -9,10 +10,11 @@ import { GuideFooter } from "@/components/marketing/GuideFooter";
 import { ClosingCta } from "@/components/marketing/ClosingCta";
 import { REPORT_TEMPLATE_INTRO, REPORT_TEMPLATE_DISCLAIMER } from "@/lib/constants/guides";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Free Property Condition Report Template (Downloadable PDF) | MeInspect",
   description: "A downloadable, room-by-room template you can use for your own move-in or move-out inspection.",
-};
+  path: "/resources/report-template",
+});
 
 export default function ReportTemplatePage() {
   return (

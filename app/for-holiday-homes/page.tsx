@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { PageHero } from "@/components/marketing/PageHero";
@@ -12,10 +13,11 @@ import {
   HOLIDAY_HOMES_CLOSING,
 } from "@/lib/constants/forHolidayHomes";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Check-In / Check-Out Condition Reports for Holiday Homes | MeInspect",
   description: "Fast check-in and check-out condition reports between every guest, built for short-term rental turnover.",
-};
+  path: "/for-holiday-homes",
+});
 
 export default function ForHolidayHomesPage() {
   return (

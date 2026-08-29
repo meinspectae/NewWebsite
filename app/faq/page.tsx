@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { Breadcrumb } from "@/components/marketing/Breadcrumb";
@@ -6,10 +7,11 @@ import { FaqAccordion } from "@/components/marketing/FaqAccordion";
 import { ClosingCta } from "@/components/marketing/ClosingCta";
 import { GENERAL_FAQ } from "@/lib/constants/faq";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Property Inspection FAQ | MeInspect",
   description: "Everything you need to know before your first move-in or move-out inspection.",
-};
+  path: "/faq",
+});
 
 export default function FaqPage() {
   return (

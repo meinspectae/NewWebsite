@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { GuideHeader } from "@/components/marketing/GuideHeader";
@@ -7,10 +8,11 @@ import { GuideFooter } from "@/components/marketing/GuideFooter";
 import { ClosingCta } from "@/components/marketing/ClosingCta";
 import { MOVE_IN_CHECKLIST_BLOCKS, GUIDE_DISCLAIMER } from "@/lib/constants/guides";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Move-In Inspection Checklist: The Complete Guide | MeInspect",
   description: "Everything to document before you hand over the keys — room by room, with what counts as good evidence.",
-};
+  path: "/resources/move-in-checklist",
+});
 
 export default function MoveInChecklistPage() {
   return (

@@ -47,8 +47,19 @@ export default async function BlogGuidePage({ params }: ArticlePageParams) {
   // Suggest two other articles to keep reading, excluding this one.
   const others = BLOG_GUIDES.filter((g) => g.slug !== guide.slug).slice(0, 2);
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: guide.title,
+    description: guide.cardDescription,
+    author: { "@type": "Organization", name: "MeInspect" },
+    publisher: { "@type": "Organization", name: "MeInspect" },
+    mainEntityOfPage: `https://meinspect.com/resources/${guide.slug}`,
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <Navbar />
       <main className="flex flex-col bg-off-white">
         <GuideHeader breadcrumb={guide.title} tag={guide.tag} title={guide.title} dek={guide.dek} />

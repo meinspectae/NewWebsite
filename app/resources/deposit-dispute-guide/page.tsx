@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { GuideHeader } from "@/components/marketing/GuideHeader";
@@ -7,10 +8,11 @@ import { GuideFooter } from "@/components/marketing/GuideFooter";
 import { ClosingCta } from "@/components/marketing/ClosingCta";
 import { DEPOSIT_DISPUTE_BLOCKS, DEPOSIT_DISPUTE_DISCLAIMER } from "@/lib/constants/guides";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "How to Win a Deposit Dispute: Evidence That Works | MeInspect",
   description: "What actually convinces a landlord, tenant, or adjudicator — and the evidence that doesn't.",
-};
+  path: "/resources/deposit-dispute-guide",
+});
 
 export default function DepositDisputeGuidePage() {
   return (

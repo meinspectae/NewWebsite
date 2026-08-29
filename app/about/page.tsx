@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import { MapPin, Clock, PenTool } from "lucide-react";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
@@ -6,10 +7,11 @@ import { Breadcrumb } from "@/components/marketing/Breadcrumb";
 import { FeatureGrid } from "@/components/marketing/FeatureGrid";
 import { ClosingCta } from "@/components/marketing/ClosingCta";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "About | MeInspect",
   description: "MeInspect protects landlords and tenants equally with GPS-tagged, timestamped, signed property condition reports.",
-};
+  path: "/about",
+});
 
 const PRINCIPLES = [
   {

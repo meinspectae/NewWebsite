@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { PageHero } from "@/components/marketing/PageHero";
@@ -18,11 +19,12 @@ import {
   LANDLORDS_CLOSING,
 } from "@/lib/constants/forLandlords";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Landlord Inspection Checklist & Property Condition Reports | MeInspect",
   description:
     "A landlord inspection checklist with GPS-tagged photos and three-party sign-off — turn disputes into a settled fact before the tenant even moves in.",
-};
+  path: "/for-landlords",
+});
 
 export default function ForLandlordsPage() {
   return (

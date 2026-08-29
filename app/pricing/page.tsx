@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { Breadcrumb } from "@/components/marketing/Breadcrumb";
@@ -7,10 +8,11 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { PRICING_DETAIL_TIERS } from "@/lib/constants/pricingDetail";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Pricing | MeInspect",
   description: "Pay only for the report. The app, the camera, the walkthrough, and the signatures are all included.",
-};
+  path: "/pricing",
+});
 
 export default function PricingPage() {
   return (
