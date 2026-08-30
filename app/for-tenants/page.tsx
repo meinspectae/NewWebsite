@@ -20,7 +20,7 @@ import {
 } from "@/lib/constants/forTenants";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Property Condition Reports for Tenants — Protect Your Deposit | MeInspect",
+  title: "Property Condition Reports for Tenants | MeInspect",
   description:
     "A tenant move-in checklist with GPS-tagged, timestamped photos — the single best thing you can do to protect your deposit.",
   path: "/for-tenants",

@@ -4,6 +4,7 @@ export interface BlogGuideMeta {
   slug: string;
   tag: string;
   title: string;
+  metaTitle?: string; // shorter version for <title>/og:title when the headline itself runs long
   dek: string;
   cardTitle: string;
   cardDescription: string;
@@ -15,6 +16,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     slug: "distrust-proof-handover-system",
     tag: "Article",
     title: "Stop Saying \"Trust the Landlord or Tenant.\" Build a System That Survives Distrust",
+    metaTitle: "Build a Handover System That Survives Distrust",
     cardTitle: "Stop Saying \"Trust the Landlord or Tenant.\" Build a System That Survives Distrust",
     dek: "Most Dubai deposit disputes aren't caused by bad faith — they're caused by a fuzzy handover process. Here's what a distrust-proof system actually looks like.",
     cardDescription: "Most deposit disputes aren't caused by bad faith — they're caused by a fuzzy process. Here's what a distrust-proof system looks like.",
@@ -132,6 +134,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     slug: "rental-market-timing-problem",
     tag: "Article",
     title: "The Rental Market Doesn't Have a Trust Problem. It Has a Timing Problem.",
+    metaTitle: "The Rental Market's Real Problem Is Timing, Not Trust",
     cardTitle: "The Rental Market Doesn't Have a Trust Problem. It Has a Timing Problem.",
     dek: "Most rental disputes aren't about bad faith — they're about when evidence gets captured. Why 'predictive' documentation changes the outcome, not just 'digital.'",
     cardDescription: "Why 'predictive' documentation changes the outcome of a dispute — not just 'digital' documentation.",
@@ -234,6 +237,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     slug: "real-estate-verisign-moment",
     tag: "Article",
     title: "Beyond the Handshake: Why Real Estate Needs Its VeriSign Moment",
+    metaTitle: "Why Real Estate Needs Its VeriSign Moment",
     cardTitle: "Beyond the Handshake: Why Real Estate Needs Its VeriSign Moment",
     dek: "E-commerce got a trust signal with the SSL padlock. Banking got one with two-factor authentication. Real estate is still running on handshakes and blurry photos.",
     cardDescription: "E-commerce got the SSL padlock. Banking got 2FA. Real estate is still running on handshakes.",
@@ -307,6 +311,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     slug: "premium-brand-handover-gap",
     tag: "Article",
     title: "You Spent Millions Building Your Real Estate Brand. How Does Your Handover Process Look?",
+    metaTitle: "Does Your Handover Process Match Your Brand?",
     cardTitle: "You Spent Millions Building Your Real Estate Brand. How Does Your Handover Process Look?",
     dek: "Sleek offices, elite marketing, seamless client acquisition — and then a dog-eared paper clipboard at the key handover. Why operational execution has to match the brand.",
     cardDescription: "Sleek offices, elite marketing — and then a dog-eared paper clipboard at the key handover.",
@@ -380,6 +385,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     slug: "digital-handovers-replacing-paper-checklists",
     tag: "Article",
     title: "Why Digital Handovers Are Replacing Paper Inspection Checklists in Modern Real Estate",
+    metaTitle: "Why Digital Handovers Are Replacing Paper Checklists",
     cardTitle: "Why Digital Handovers Are Replacing Paper Inspection Checklists in Modern Real Estate",
     dek: "The clipboard, the carbonless copy form, the smudged ink — paper checklists are becoming a liability. Here's the case for digital condition reports.",
     cardDescription: "The clipboard and carbonless copy form are becoming a liability. Here's the case for going digital.",
@@ -444,6 +450,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     slug: "dubai-deposit-refund-timeline",
     tag: "Article",
     title: "How Long Does a Landlord Have to Refund Your Deposit in Dubai?",
+    metaTitle: "Deposit Refund Timelines in Dubai",
     cardTitle: "How Long Does a Landlord Have to Refund Your Deposit in Dubai?",
     dek: "What UAE tenancy practice actually says about deposit refund timing, and what to do if a landlord goes quiet after move-out.",
     cardDescription: "What UAE tenancy practice actually says about deposit refund timing, and what to do if a landlord goes quiet.",

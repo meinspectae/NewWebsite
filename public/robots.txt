@@ -1,19 +1,25 @@
 User-agent: *
 Allow: /
+Disallow:
 
 User-agent: GPTBot
 Allow: /
+Disallow:
 
 User-agent: Google-Extended
 Allow: /
+Disallow:
 
 User-agent: CCBot
 Allow: /
+Disallow:
 
 User-agent: Bytespider
 Allow: /
+Disallow:
 
 User-agent: Amazonbot
 Allow: /
+Disallow:
 
 Sitemap: https://meinspect.com/sitemap.xml

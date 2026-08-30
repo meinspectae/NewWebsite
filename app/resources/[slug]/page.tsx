@@ -29,13 +29,17 @@ export async function generateMetadata({ params }: ArticlePageParams): Promise<M
   if (!guide) return {};
 
   const url = `https://meinspect.com/resources/${guide.slug}`;
+  // Use the shorter metaTitle for <title>/social tags when the full headline
+  // runs long — the H1 on the page itself still uses the full guide.title.
+  const displayTitle = guide.metaTitle ?? guide.title;
+  const titleTag = `${displayTitle} | MeInspect`;
 
   return {
-    title: `${guide.title} | MeInspect`,
+    title: titleTag,
     description: guide.cardDescription,
     alternates: { canonical: url },
-    openGraph: { title: guide.title, description: guide.cardDescription, url },
-    twitter: { title: guide.title, description: guide.cardDescription },
+    openGraph: { title: displayTitle, description: guide.cardDescription, url },
+    twitter: { title: displayTitle, description: guide.cardDescription },
   };
 }
 

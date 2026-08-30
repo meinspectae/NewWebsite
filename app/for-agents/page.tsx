@@ -10,7 +10,7 @@ import { ClosingCta } from "@/components/marketing/ClosingCta";
 import { AGENTS_HERO, AGENTS_WHY, AGENTS_WHY_FEATURES, AGENTS_FAQ, AGENTS_CLOSING } from "@/lib/constants/forAgents";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Property Condition Reports for Agents & Property Managers | MeInspect",
+  title: "Property Condition Reports for Agents | MeInspect",
   description:
     "Standardise every handover across your portfolio — the same photo record, the same rating scale, the same three-party sign-off, every time.",
   path: "/for-agents",

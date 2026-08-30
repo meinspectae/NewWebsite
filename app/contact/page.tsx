@@ -37,6 +37,46 @@ export default function ContactPage() {
             <ContactForm />
           </div>
         </section>
+
+        <section className="w-full bg-white py-14 lg:py-20">
+          <div className="mx-auto max-w-[720px] px-6 lg:px-10">
+            <span className="block font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-primary-blue">
+              Looking for Something Specific?
+            </span>
+            <h2 className="mt-3 text-[26px] font-semibold leading-[1.2] tracking-tight text-dark sm:text-[30px]">
+              You might not need to wait for a reply
+            </h2>
+            <p className="mt-4 text-[15px] leading-relaxed text-grey">
+              A lot of the questions we get by email are already answered on the site — worth a quick check before
+              you wait on a response:
+            </p>
+            <ul className="mt-6 flex flex-col gap-3">
+              <li>
+                <a href="/faq" className="text-[15px] font-semibold text-primary-blue hover:text-deep-blue">
+                  General questions about how MeInspect works →
+                </a>
+              </li>
+              <li>
+                <a href="/pricing" className="text-[15px] font-semibold text-primary-blue hover:text-deep-blue">
+                  Pricing for individual reports and agencies →
+                </a>
+              </li>
+              <li>
+                <a href="/for-agents" className="text-[15px] font-semibold text-primary-blue hover:text-deep-blue">
+                  Working with us as a property management company or brokerage →
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/resources/deposit-dispute-guide"
+                  className="text-[15px] font-semibold text-primary-blue hover:text-deep-blue"
+                >
+                  In an active deposit dispute right now →
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

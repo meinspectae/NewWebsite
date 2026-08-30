@@ -9,9 +9,10 @@ import { InfoBand } from "@/components/marketing/InfoBand";
 import { ClosingCta } from "@/components/marketing/ClosingCta";
 import { RESOURCE_GUIDES } from "@/lib/constants/guides";
 import { BLOG_GUIDES } from "@/lib/constants/blogGuides";
+import { LOCATIONS } from "@/lib/constants/locations";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Resource Hub — Move-In Checklists, Deposit Guides & Templates | MeInspect",
+  title: "Resource Hub — Checklists, Deposit Guides & Templates | MeInspect",
   description: "Free, practical resources for documenting a rental property properly — checklists, dispute guides, and templates.",
   path: "/resources",
 });
@@ -52,6 +53,20 @@ export default function ResourcesPage() {
                 title={guide.cardTitle}
                 description={guide.cardDescription}
                 href={`/resources/${guide.slug}`}
+              />
+            ))}
+          </div>
+        </Section>
+
+        <Section eyebrow="By Area" title="Local guides." tone="white" wide>
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+            {LOCATIONS.filter((location) => location.localPoints.length > 0).map((location) => (
+              <ResourceCard
+                key={location.slug}
+                tag={location.city}
+                title={`Inspections in ${location.area}`}
+                description={location.heroDek}
+                href={`/locations/${location.slug}`}
               />
             ))}
           </div>

@@ -20,7 +20,7 @@ import {
 } from "@/lib/constants/forLandlords";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Landlord Inspection Checklist & Property Condition Reports | MeInspect",
+  title: "Landlord Inspection Checklist & Reports | MeInspect",
   description:
     "A landlord inspection checklist with GPS-tagged photos and three-party sign-off — turn disputes into a settled fact before the tenant even moves in.",
   path: "/for-landlords",

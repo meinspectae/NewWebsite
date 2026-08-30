@@ -59,8 +59,15 @@ export const LOCATIONS: Location[] = [
       "From Burj Khalifa-adjacent towers to Old Town villas, document the property's condition before keys change hands.",
     localPoints: [
       "Downtown buildings vary widely in age — older Old Town units benefit from extra attention to plumbing fixtures and paint condition, which tend to show wear sooner than newer towers.",
+      "Many Downtown towers require security or concierge sign-off for large item moves — factor this into when you schedule your inspection relative to your actual move date.",
     ],
-    faqs: [],
+    faqs: [
+      {
+        question: "Do older Old Town villas need a different inspection approach than the towers?",
+        answer:
+          "Broadly the same room-by-room approach works for both, but Old Town's lower-rise villas tend to have more exterior surfaces (external walls, small gardens, balconies) worth documenting compared to a typical tower apartment.",
+      },
+    ],
   },
   {
     slug: "business-bay",
