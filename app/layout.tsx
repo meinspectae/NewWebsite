@@ -30,6 +30,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://meinspect.com"),
   title,
   description,
+  alternates: { canonical: "https://meinspect.com" },
   openGraph: {
     title,
     description,
