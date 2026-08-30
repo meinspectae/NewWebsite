@@ -72,7 +72,7 @@ function PhotosPage({ page }: { page: ReportPageMeta }) {
           >
             <div className="relative aspect-[16/9] w-full">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={room.photo} alt="" className="h-full w-full object-cover" draggable={false} />
+              <img src={room.photo} alt={`${room.name} photo from a MeInspect property condition report`} className="h-full w-full object-cover" draggable={false} />
             </div>
             <span className="mt-0.5 block text-[9.5px] font-semibold text-dark/70 sm:text-[10.5px]">{room.name}</span>
           </motion.div>

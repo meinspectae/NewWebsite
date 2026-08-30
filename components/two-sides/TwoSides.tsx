@@ -30,7 +30,7 @@ function MobileSide({ content, evidence }: { content: SideContent; evidence: Evi
       <SidePanel content={content} align="left" />
       <div data-two-sides-item className="relative h-[200px] overflow-hidden rounded-2xl shadow-[0_16px_36px_-20px_rgba(11,66,103,0.35)] sm:h-[230px]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={content.photo} alt="" className="h-full w-full object-cover" draggable={false} />
+        <img src={content.photo} alt={content.headline} className="h-full w-full object-cover" draggable={false} />
       </div>
       <div data-two-sides-item className="flex justify-center">
         <EvidenceFloatCard evidence={evidence} />
@@ -120,7 +120,7 @@ export function TwoSides() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={TENANT_SIDE.photo}
-              alt=""
+              alt={TENANT_SIDE.headline}
               data-two-sides-parallax
               className="absolute inset-x-0 -top-4 h-[calc(100%+32px)] w-full object-cover"
               draggable={false}
@@ -130,7 +130,7 @@ export function TwoSides() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={LANDLORD_SIDE.photo}
-              alt=""
+              alt={LANDLORD_SIDE.headline}
               data-two-sides-parallax
               className="absolute inset-x-0 -top-4 h-[calc(100%+32px)] w-full object-cover"
               draggable={false}

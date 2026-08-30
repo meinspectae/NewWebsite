@@ -26,7 +26,7 @@ function PhotographVisual() {
   return (
     <div data-how-phone className="relative h-full w-full">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/rooms/kitchen.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" draggable={false} />
+      <img src="/rooms/kitchen.jpg" alt="Kitchen photo captured during a MeInspect property inspection" className="absolute inset-0 h-full w-full object-cover" draggable={false} />
       <div className="absolute inset-0 bg-dark/15" />
 
       <div data-how-camera-corner className="absolute left-2 top-2 h-4 w-4 border-l-[2.5px] border-t-[2.5px] border-white" />

@@ -14,7 +14,7 @@ export function RoomThumbnail({ variant = "move-in", className = "" }: RoomThumb
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/rooms/property-living-room.jpg"
-        alt=""
+        alt="Living room photo from a MeInspect property condition report"
         className={`h-full w-full object-cover object-center ${variant === "move-out" ? "sepia-[0.18] saturate-[0.85]" : ""}`}
         draggable={false}
       />

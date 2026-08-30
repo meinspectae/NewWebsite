@@ -17,7 +17,7 @@ function StageContent({ stage }: { stage: EvidenceStage }) {
         <>
           <div className="h-16 w-full overflow-hidden rounded-lg xl:h-[72px]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/rooms/living-room.jpg" alt="" className="h-full w-full object-cover" draggable={false} />
+            <img src="/rooms/living-room.jpg" alt="Living room photo captured as evidence in a MeInspect report" className="h-full w-full object-cover" draggable={false} />
           </div>
           <span className="mt-2 block font-mono text-[11px] text-grey">Original capture</span>
         </>

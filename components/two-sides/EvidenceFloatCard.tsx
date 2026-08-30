@@ -13,7 +13,7 @@ export function EvidenceFloatCard({ evidence, width = "w-[188px] sm:w-[206px]" }
       <div className="w-full overflow-hidden rounded-2xl border border-dark/8 bg-white shadow-[0_18px_38px_-16px_rgba(17,17,17,0.4)]">
         <div className="relative h-[72px] w-full sm:h-[80px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={evidence.photo} alt="" className="h-full w-full object-cover" draggable={false} />
+          <img src={evidence.photo} alt={evidence.caption} className="h-full w-full object-cover" draggable={false} />
           <span className="absolute left-2 top-2 flex h-5 w-5 items-center justify-center rounded-full bg-white shadow-[0_4px_10px_-2px_rgba(17,17,17,0.4)]">
             <Check size={11} strokeWidth={3} className="text-verify-green" />
           </span>

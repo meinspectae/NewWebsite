@@ -206,7 +206,7 @@ export function HeroVisualPhoto({ progressRef }: HeroVisualPhotoProps) {
             }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={photo} alt="" className="h-full w-full object-cover" draggable={false} />
+            <img src={photo} alt={`${room} photo captured in the MeInspect app`} className="h-full w-full object-cover" draggable={false} />
           </div>
 
           {/* live room-name row — covers the baked "Living Room / 2/8" */}

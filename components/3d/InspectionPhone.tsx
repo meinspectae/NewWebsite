@@ -59,7 +59,7 @@ function PhoneScreen({ screen }: { screen: HeroKeyframe["phoneScreen"] }) {
       {/* real inspection photograph */}
       <div className="relative mx-2.5 mt-2.5 flex-1 overflow-hidden rounded-xl bg-off-white">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={photo} alt="" className="h-full w-full object-cover" draggable={false} />
+        <img src={photo} alt="Example property inspection photo shown inside the MeInspect app" className="h-full w-full object-cover" draggable={false} />
       </div>
 
       {/* condition card */}
