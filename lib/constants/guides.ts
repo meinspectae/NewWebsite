@@ -34,6 +34,14 @@ export const RESOURCE_GUIDES: GuideMeta[] = [
     dek: "A simple, room-by-room template you can print or fill in digitally for your own move-in or move-out inspection — free to download, no account needed.",
     cardDescription: "A downloadable, room-by-room template you can use for your own move-in or move-out inspection.",
   },
+  {
+    slug: "move-out-checklist",
+    tag: "Guide",
+    title: "Move-Out Inspection Checklist: How to Protect Your Deposit",
+    cardTitle: "Move-Out Inspection Checklist: How to Protect Your Deposit",
+    dek: "The move-out inspection is where deposits are actually won or lost. Here's exactly what to document, and why comparing against your move-in report is what makes the difference.",
+    cardDescription: "What to document at move-out, and why comparing it against your move-in report is what actually protects your deposit.",
+  },
 ];
 
 export const MOVE_IN_CHECKLIST_BLOCKS: ArticleBlock[] = [
@@ -168,6 +176,69 @@ export const REPORT_TEMPLATE_INTRO: ArticleBlock[] = [
   {
     type: "paragraph",
     text: "This template works well for a quick, informal walkthrough. But paper forms are easy to lose, hard to prove weren't altered afterward, and don't carry a timestamp or GPS location. If you want a report that holds up in an actual dispute, MeInspect turns the same checklist into GPS-tagged photos, automatic timestamps, and digital three-party sign-off — all stored securely in the cloud.",
+  },
+];
+
+export const MOVE_OUT_CHECKLIST_BLOCKS: ArticleBlock[] = [
+  {
+    type: "paragraph",
+    text: "The move-in inspection sets the baseline. The move-out inspection is where that baseline actually pays off — or where the gap in your documentation costs you. Most disputes don't happen because someone forgot the move-in report entirely. They happen because the move-out inspection wasn't done the same way, so the two records can't be properly compared.",
+  },
+  { type: "heading", text: "Use the same format as your move-in report" },
+  {
+    type: "paragraph",
+    text: "This is the single most important rule of a move-out inspection: it needs to mirror your move-in report room for room, item for item. If your move-in report checked flooring, fixtures, and appliances in the kitchen, your move-out report needs to check the exact same things in the exact same order. A move-out inspection that isn't structured the same way as the move-in one is much weaker evidence — there's nothing clean to compare it against.",
+  },
+  { type: "heading", text: "The room-by-room checklist" },
+  { type: "subheading", text: "Living areas and bedrooms" },
+  {
+    type: "list",
+    items: [
+      "Walls and ceilings — any new marks, holes, or damage since move-in",
+      "Flooring — new scratches, stains, or damage beyond normal wear",
+      "Windows and doors — still opening, closing, and locking properly",
+      "Built-in storage and light fixtures — condition compared to move-in photos",
+    ],
+  },
+  { type: "subheading", text: "Kitchen" },
+  {
+    type: "list",
+    items: [
+      "Every appliance — still functioning, no new damage",
+      "Countertops and cabinets — new chips, stains, or water damage",
+      "Plumbing — any leaks that weren't there at move-in",
+    ],
+  },
+  { type: "subheading", text: "Bathrooms" },
+  {
+    type: "list",
+    items: [
+      "Grout and sealant — new deterioration since move-in",
+      "Fixtures — toilet, shower, taps, extractor fan all still working",
+    ],
+  },
+  { type: "subheading", text: "Beyond the rooms" },
+  {
+    type: "list",
+    items: [
+      "Keys, fobs, and access cards — full count returned",
+      "Utility meter readings on the day you hand back the keys",
+      "Furniture and fittings, if the property was furnished, matched against the move-in inventory",
+    ],
+  },
+  { type: "heading", text: "What separates normal wear from damage" },
+  {
+    type: "paragraph",
+    text: "This is where most disputes actually happen. Faded paint, minor scuff marks from normal foot traffic, and small nail holes from hanging pictures are generally accepted as normal wear and tear in most tenancies. Cracked tiles, burns, stains that won't clean, and broken fixtures are typically treated as damage. When in doubt, photograph it clearly and let the comparison against your move-in report speak for itself rather than arguing definitions in the moment.",
+  },
+  { type: "heading", text: "Do the walkthrough together, if you can" },
+  {
+    type: "paragraph",
+    text: "A move-out inspection completed with both tenant and landlord present, reviewed together, and signed by both on the spot resolves far more disagreements than a report done alone and emailed afterward. If a physical walkthrough together isn't possible, share the completed report immediately and ask for written acknowledgment rather than letting it sit unanswered.",
+  },
+  {
+    type: "paragraph",
+    text: "MeInspect builds the comparison in automatically — every move-out inspection can be checked against the original move-in report, room by room, so there's nothing left to reconstruct from memory.",
   },
 ];
 

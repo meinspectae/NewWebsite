@@ -6,29 +6,30 @@ import { GuideHeader } from "@/components/marketing/GuideHeader";
 import { ArticleBlocks } from "@/components/marketing/ArticleBlocks";
 import { GuideFooter } from "@/components/marketing/GuideFooter";
 import { ClosingCta } from "@/components/marketing/ClosingCta";
-import { MOVE_IN_CHECKLIST_BLOCKS, GUIDE_DISCLAIMER } from "@/lib/constants/guides";
+import { MOVE_OUT_CHECKLIST_BLOCKS, GUIDE_DISCLAIMER } from "@/lib/constants/guides";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Move-In Inspection Checklist: The Complete Guide | MeInspect",
-  description: "Everything to document before you hand over the keys — room by room, with what counts as good evidence.",
-  path: "/resources/move-in-checklist",
+  title: "Move-Out Inspection Checklist: How to Protect Your Deposit | MeInspect",
+  description:
+    "What to document at move-out, and why comparing it against your move-in report is what actually protects your deposit.",
+  path: "/resources/move-out-checklist",
 });
 
-export default function MoveInChecklistPage() {
+export default function MoveOutChecklistPage() {
   return (
     <>
       <Navbar />
       <main className="flex flex-col bg-off-white">
         <GuideHeader
-          breadcrumb="Move-In Inspection Checklist"
+          breadcrumb="Move-Out Inspection Checklist"
           tag="Guide"
-          title="Move-In Inspection Checklist: The Complete Guide"
-          dek="Whether you're a tenant protecting a deposit or a landlord protecting a property, the move-in inspection is the single most important five minutes of a tenancy. Here's what to actually document."
+          title="Move-Out Inspection Checklist: How to Protect Your Deposit"
+          dek="The move-out inspection is where deposits are actually won or lost. Here's exactly what to document, and why comparing against your move-in report is what makes the difference."
         />
 
         <div className="w-full bg-white py-12 lg:py-14">
           <div className="mx-auto max-w-[760px] px-6 lg:px-10">
-            <ArticleBlocks blocks={MOVE_IN_CHECKLIST_BLOCKS} />
+            <ArticleBlocks blocks={MOVE_OUT_CHECKLIST_BLOCKS} />
           </div>
         </div>
 
@@ -36,9 +37,8 @@ export default function MoveInChecklistPage() {
           <GuideFooter
             disclaimer={GUIDE_DISCLAIMER}
             keepReading={[
-              { label: "Move-Out Inspection Checklist", href: "/resources/move-out-checklist" },
+              { label: "Move-In Inspection Checklist", href: "/resources/move-in-checklist" },
               { label: "Deposit Dispute Evidence Guide", href: "/resources/deposit-dispute-guide" },
-              { label: "Free Report Template", href: "/resources/report-template" },
             ]}
             roleLinks={[
               { label: "For Tenants", href: "/for-tenants" },
