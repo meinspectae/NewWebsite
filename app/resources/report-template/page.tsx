@@ -34,7 +34,7 @@ export default function ReportTemplatePage() {
               href="/start"
               className="inline-flex items-center gap-2 rounded-full bg-primary-blue px-7 py-3.5 text-[14.5px] font-semibold text-white transition-colors hover:bg-deep-blue"
             >
-              Join the Waiting List to Get the Template
+              Get the Guided Version in the App
               <ArrowRight size={16} strokeWidth={2.25} />
             </Link>
           </div>
@@ -48,7 +48,7 @@ export default function ReportTemplatePage() {
               Prefer to skip the printing and signing by hand? The MeInspect app builds this exact checklist into a
               guided walkthrough with GPS-tagged photos and digital signatures.{" "}
               <Link href="/start" className="font-semibold text-primary-blue hover:text-deep-blue">
-                Join the waiting list →
+                Download the app →
               </Link>
             </p>
           </div>
@@ -70,9 +70,7 @@ export default function ReportTemplatePage() {
 
         <ClosingCta
           title="Ready for a report that documents itself?"
-          body="MeInspect is coming to the App Store and Play Store. Join the waiting list to be first in line."
-          ctaLabel="Join the Waiting List"
-          ctaHref="/start"
+          body="Download MeInspect free on the App Store or Google Play and start your first report today."
         />
       </main>
       <Footer />

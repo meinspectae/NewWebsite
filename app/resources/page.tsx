@@ -27,7 +27,7 @@ export default function ResourcesPage() {
           kicker="Resource Hub"
           title="Guides, Checklists & Templates for Tenants and Landlords"
           description="Free, practical resources for documenting a rental property properly — whether you're moving in tomorrow or managing a portfolio of units."
-          primaryCta={{ label: "Join the Waiting List", href: "/start" }}
+          primaryCta={{ label: "Download the App", href: "/start" }}
         />
 
         <Section eyebrow="Cornerstone Guides" title="Start here." tone="white" wide>
@@ -80,9 +80,7 @@ export default function ResourcesPage() {
 
         <ClosingCta
           title="Ready to document your own property?"
-          body="MeInspect is coming to the App Store and Play Store. Join the waiting list to be first in line."
-          ctaLabel="Join the Waiting List"
-          ctaHref="/start"
+          body="Download MeInspect free on the App Store or Google Play and start your first report today."
         />
       </main>
       <Footer />

@@ -87,9 +87,7 @@ export default async function BlogGuidePage({ params }: ArticlePageParams) {
 
         <ClosingCta
           title="Ready to document your own property?"
-          body="MeInspect is coming to the App Store and Play Store. Join the waiting list to be first in line."
-          ctaLabel="Join the Waiting List"
-          ctaHref="/start"
+          body="Download MeInspect free on the App Store or Google Play and start your first report today."
         />
       </main>
       <Footer />

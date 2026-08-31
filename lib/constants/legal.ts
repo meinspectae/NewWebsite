@@ -15,11 +15,11 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
     number: 2,
     title: "Information We Collect",
     blocks: [
-      { type: "paragraph", text: "When you use MeInspect or join our waiting list, we may collect:" },
+      { type: "paragraph", text: "When you use MeInspect, we may collect:" },
       {
         type: "list",
         items: [
-          "Contact details — name, email address, and phone/WhatsApp number when you sign up for the waiting list, contact us, or create an account.",
+          "Contact details — name, email address, and phone/WhatsApp number when you contact us or create an account.",
           "Property inspection data — photos, GPS coordinates, timestamps, condition ratings, notes, and digital signatures you capture while using the app.",
           "Account information — login credentials and role (landlord, tenant, agent, property manager, or agency).",
           "Usage data — device type, app interactions, and log data that help us improve the service.",
@@ -153,11 +153,11 @@ export const TERMS_SECTIONS: LegalSection[] = [
   },
   {
     number: 4,
-    title: "Waiting List",
+    title: "Communications",
     blocks: [
       {
         type: "paragraph",
-        text: "By joining our waiting list, you consent to receive communications from us about the launch of the app and related updates. You may unsubscribe at any time.",
+        text: "If you contact us or create an account, you consent to receive communications from us about your account, our services, and related updates. You may unsubscribe from marketing communications at any time.",
       },
     ],
   },

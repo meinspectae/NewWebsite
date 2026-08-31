@@ -30,7 +30,7 @@ export const PRICING_DETAIL_TIERS: PricingDetailTier[] = [
       "Emailed to tenant and landlord on completion",
       "Stored in your account — access anytime",
     ],
-    cta: "Join the Waiting List",
+    cta: "Download the App",
     href: "/start",
     footnote: "Document everything yourself using the app. Pay only when you're ready to generate your official report.",
     recommended: true,

@@ -1,11 +1,10 @@
-export type FormType = "contact" | "careers" | "waitlist";
+export type FormType = "contact" | "careers";
 
 const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
 const SUBJECTS: Record<FormType, string> = {
   contact: "New contact form submission",
   careers: "New Meinspector application",
-  waitlist: "New waiting list signup",
 };
 
 const FIELD_LABELS: Record<string, string> = {

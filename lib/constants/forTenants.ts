@@ -8,7 +8,7 @@ export const TENANTS_HERO = {
   title: "Protect Your Deposit With a Move-In Inspection Report",
   description:
     "Before you hand over a single dirham, dollar, or pound, document exactly what the property looks like. A tenant move-in checklist with GPS-tagged, timestamped photos is the single best thing you can do to protect your deposit.",
-  primaryCta: { label: "Join the Waiting List", href: "/start" },
+  primaryCta: { label: "Download the App", href: "/start" },
   secondaryCta: { label: "Read the Full Checklist Guide", href: "/resources/move-in-checklist" },
 } as const;
 
@@ -86,7 +86,5 @@ export const TENANTS_FAQ: FaqItem[] = [
 
 export const TENANTS_CLOSING = {
   title: "Protect your deposit before you move a single box.",
-  body: "MeInspect is coming to the App Store and Play Store. Join the waiting list to be first in line.",
-  ctaLabel: "Join the Waiting List",
-  ctaHref: "/start",
+  body: "Download MeInspect free on the App Store or Google Play and start your first report today.",
 };

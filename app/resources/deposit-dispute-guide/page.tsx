@@ -48,9 +48,7 @@ export default function DepositDisputeGuidePage() {
 
         <ClosingCta
           title="Build dispute-ready evidence from day one."
-          body="MeInspect is coming to the App Store and Play Store. Join the waiting list to be first in line."
-          ctaLabel="Join the Waiting List"
-          ctaHref="/start"
+          body="Download MeInspect free on the App Store or Google Play and start your first report today."
         />
       </main>
       <Footer />

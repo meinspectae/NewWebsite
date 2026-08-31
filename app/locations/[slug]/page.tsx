@@ -94,7 +94,7 @@ export default async function LocationPage({ params }: LocationPageParams) {
           kicker={`${location.area}, ${location.city}`}
           title={`Property Condition Reports in ${location.area}`}
           description={location.heroDek}
-          primaryCta={{ label: "Join the Waiting List", href: "/start" }}
+          primaryCta={{ label: "Download the App", href: "/start" }}
         />
 
         {location.localPoints.length > 0 && (
@@ -116,8 +116,6 @@ export default async function LocationPage({ params }: LocationPageParams) {
         <ClosingCta
           title={`Document your ${location.area} property.`}
           body="Protect your deposit, or your property, with a signed record everyone agrees on."
-          ctaLabel="Start an Inspection"
-          ctaHref="/start"
         />
       </main>
       <Footer />

@@ -8,7 +8,7 @@ export const LANDLORDS_HERO = {
   title: "Document Your Property Condition Before Every Tenancy",
   description:
     "A landlord inspection checklist with GPS-tagged photos and three-party sign-off turns “he said, she said” into a settled fact — before the tenant even moves in.",
-  primaryCta: { label: "Join the Waiting List", href: "/start" },
+  primaryCta: { label: "Download the App", href: "/start" },
   secondaryCta: { label: "See Pricing", href: "/pricing" },
 } as const;
 
@@ -88,7 +88,5 @@ export const LANDLORDS_FAQ: FaqItem[] = [
 
 export const LANDLORDS_CLOSING = {
   title: "Your next tenancy deserves a documented start.",
-  body: "MeInspect is coming to the App Store and Play Store. Join the waiting list to be first in line.",
-  ctaLabel: "Join the Waiting List",
-  ctaHref: "/start",
+  body: "Download MeInspect free on the App Store or Google Play and start your first report today.",
 };
