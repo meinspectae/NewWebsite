@@ -38,7 +38,7 @@ function StoreBadge({ href, eyebrow, label, icon }: StoreBadgeProps) {
 export function StoreBadges() {
   return (
     <div className="flex flex-wrap items-center gap-3.5">
-      <StoreBadge href="https://apps.apple.com/us/app/meinspect/id6793102473" eyebrow="Download on the" label="App Store" icon="apple" />
+      <StoreBadge href="https://apps.apple.com/ae/app/meinspect/id6793102473" eyebrow="Download on the" label="App Store" icon="apple" />
       <StoreBadge href="https://play.google.com/store/apps/details?id=com.meinspect.app" eyebrow="GET IT ON" label="Google Play" icon="play" />
     </div>
   );
