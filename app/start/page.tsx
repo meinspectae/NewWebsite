@@ -52,10 +52,31 @@ export default function StartPage() {
               </div>
             </div>
 
-            <div className="flex items-center justify-center rounded-2xl border border-dark/8 bg-white p-8">
-              <p className="text-center text-[15px] leading-relaxed text-grey">
-                Scan the App Store or Google Play badge on your phone, or tap them here on desktop to be taken
-                straight to the listing.
+            <div className="flex flex-col items-center justify-center gap-5 rounded-2xl border border-dark/8 bg-white p-8">
+              <div className="flex gap-6">
+                <div className="flex flex-col items-center gap-2">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/qr-app-store.png"
+                    alt="QR code to download MeInspect on the App Store"
+                    className="h-[140px] w-[140px] rounded-lg border border-dark/8"
+                    draggable={false}
+                  />
+                  <span className="font-mono text-[11px] font-medium text-dark/60">App Store</span>
+                </div>
+                <div className="flex flex-col items-center gap-2">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/qr-google-play.png"
+                    alt="QR code to download MeInspect on Google Play"
+                    className="h-[140px] w-[140px] rounded-lg border border-dark/8"
+                    draggable={false}
+                  />
+                  <span className="font-mono text-[11px] font-medium text-dark/60">Google Play</span>
+                </div>
+              </div>
+              <p className="text-center text-[14px] leading-relaxed text-grey">
+                Scan with your phone's camera, or tap the badges to the left on desktop.
               </p>
             </div>
           </div>
