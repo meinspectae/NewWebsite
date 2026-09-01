@@ -1,36 +1,28 @@
 import Link from "next/link";
-import { Apple } from "lucide-react";
 
-function PlayGlyph() {
+interface StoreBadgeLinkProps {
+  href: string;
+}
+
+// Both badges below are Apple's and Google's real, official, unmodified
+// artwork - served as-is from /public, per each platform's brand guidelines
+// (their rules require using the artwork unmodified, at a consistent size,
+// not recreated or restyled).
+
+function AppStoreBadge({ href }: StoreBadgeLinkProps) {
   return (
-    <svg viewBox="0 0 512 512" className="h-[22px] w-[22px]" aria-hidden="true">
-      <path d="M99 20 340 256 99 492c-9-6-15-16-15-28V48c0-12 6-22 15-28z" fill="#5BC9F4" />
-      <path d="M99 20c6-4 14-5 21-2l230 130-84 84z" fill="#22D66F" />
-      <path d="M350 232l84 48c17 10 17 30 0 40l-84 48-84-84z" fill="#F6C915" />
-      <path d="M350 280l-84 84 84-84z" fill="transparent" />
-      <path d="M120 494c-7 3-15 2-21-2l230-236 84 84z" fill="#EE4B4B" />
-    </svg>
+    <Link href={href} className="inline-block">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/badge-app-store.svg" alt="Download on the App Store" className="h-10 w-auto" draggable={false} />
+    </Link>
   );
 }
 
-interface StoreBadgeProps {
-  href: string;
-  eyebrow: string;
-  label: string;
-  icon: "apple" | "play";
-}
-
-function StoreBadge({ href, eyebrow, label, icon }: StoreBadgeProps) {
+function GooglePlayBadge({ href }: StoreBadgeLinkProps) {
   return (
-    <Link
-      href={href}
-      className="inline-flex items-center gap-2.5 rounded-full bg-dark px-5 py-3 text-white transition-colors hover:bg-dark/85"
-    >
-      {icon === "apple" ? <Apple size={22} className="shrink-0" fill="white" /> : <PlayGlyph />}
-      <span className="flex flex-col leading-none">
-        <span className="text-[9.5px] font-medium text-white/70">{eyebrow}</span>
-        <span className="mt-1 text-[14.5px] font-semibold tracking-tight">{label}</span>
-      </span>
+    <Link href={href} className="inline-block">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/badge-google-play.svg" alt="Get it on Google Play" className="h-10 w-auto" draggable={false} />
     </Link>
   );
 }
@@ -38,8 +30,8 @@ function StoreBadge({ href, eyebrow, label, icon }: StoreBadgeProps) {
 export function StoreBadges() {
   return (
     <div className="flex flex-wrap items-center gap-3.5">
-      <StoreBadge href="https://apps.apple.com/ae/app/meinspect/id6793102473" eyebrow="Download on the" label="App Store" icon="apple" />
-      <StoreBadge href="https://play.google.com/store/apps/details?id=com.meinspect.app" eyebrow="GET IT ON" label="Google Play" icon="play" />
+      <AppStoreBadge href="https://apps.apple.com/ae/app/meinspect/id6793102473" />
+      <GooglePlayBadge href="https://play.google.com/store/apps/details?id=com.meinspect.app" />
     </div>
   );
 }
