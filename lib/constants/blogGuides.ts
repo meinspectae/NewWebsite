@@ -471,4 +471,196 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
       },
     ],
   },
+  {
+    slug: "dubai-landlords-headache-is-paperwork",
+    tag: "Article",
+    title: "Dubai Landlords: Your Biggest Headache Isn't the Rent — It's the Paperwork",
+    metaTitle: "A Dubai Landlord's Real Headache Is the Paperwork",
+    cardTitle: "Dubai Landlords: Your Biggest Headache Isn't the Rent — It's the Paperwork",
+    dek: "With more supply and a cooling market, tenants have more leverage in 2026. That makes the operational details — notices, contracts, documentation — the difference between a smooth renewal and a costly dispute.",
+    cardDescription: "In a rebalancing market, the landlords who win treat tenancy as a process business, not just a price negotiation.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "In 2026, with more supply and a cooling rental market, tenants have more choice and negotiating power. That makes the \"small\" operational details the difference between smooth renewals and costly disputes at the Rental Dispute Centre.",
+      },
+      { type: "paragraph", text: "The issues we see most on the landlord side:" },
+      {
+        type: "list",
+        items: [
+          "Late or missed rent payments and bounced cheques — still the top dispute filed by landlords",
+          "Rent increases that don't follow RERA rules — wrong percentage vs. the Smart Rental Index, or no proper 90-day written notice",
+          "Eviction and renewal notices that are late, informal (WhatsApp/verbal), or not notarised/registered where required",
+          "Security deposit and move-out conflicts over damage vs. fair wear and tear",
+          "Unauthorized subletting or misuse of the unit",
+          "Time and admin burden — vetting tenants, chasing payments, coordinating maintenance, and getting notices right",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "If you're a Dubai landlord, the highest-ROI actions this year are simple but disciplined:",
+      },
+      {
+        type: "list",
+        items: [
+          "Screen tenants properly and verify income/employment before signing",
+          "Use clear, RERA-aligned contracts (Ejari registered) with explicit maintenance, subletting, and renewal terms",
+          "Follow the 90-day written notice rule for any rent increase or change in terms, via a verifiable channel (notary/Ejari/registered mail)",
+          "Check the RERA Smart Rental Index before proposing increases so your % is within the 0–20% cap based on how far your rent is below market",
+          "Document everything — payment receipts, inspection reports, maintenance requests, and all notices",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "In a rebalancing market, the landlords who win are the ones who treat tenancy as a process business, not just a price negotiation.",
+      },
+    ],
+  },
+  {
+    slug: "were-deducting-from-your-deposit",
+    tag: "Article",
+    title: "\"We're Deducting This From Your Deposit.\"",
+    metaTitle: "We're Deducting This From Your Deposit",
+    cardTitle: "\"We're Deducting This From Your Deposit.\"",
+    dek: "You paid AED 5,000. The refund is AED 3,200. Now you're staring at a list of deductions, trying to remember what the apartment actually looked like a year ago.",
+    cardDescription: "It's not always about who's right at move-out. It's about who can prove it.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "You've moved out. The keys are handed over. The apartment is empty. You're already thinking about your next place.",
+      },
+      { type: "paragraph", text: "Then the message arrives:" },
+      {
+        type: "paragraph",
+        text: "\"Your security deposit refund is AED 3,200.\" You paid AED 5,000. \"What happened to the other AED 1,800?\"",
+      },
+      { type: "paragraph", text: "Then comes the list:" },
+      {
+        type: "list",
+        items: ["Wall repainting", "Deep cleaning", "Damaged cabinet", "Minor repairs"],
+      },
+      {
+        type: "paragraph",
+        text: "And you're staring at your phone thinking: \"That cabinet was already like that.\"",
+      },
+      {
+        type: "paragraph",
+        text: "This is where things get frustrating. Because after living somewhere for a year or two, who remembers exactly what every wall, tile, cabinet and appliance looked like on Day 1?",
+      },
+      {
+        type: "paragraph",
+        text: "You might have 47 photos from the day you moved in. But which one shows the scratch behind the bedroom door? Which one proves the kitchen cabinet was already chipped? Which one shows that mark on the wall?",
+      },
+      {
+        type: "paragraph",
+        text: "That's the real problem with security deposits. It's not always about who is right. It's about who can prove it.",
+      },
+      {
+        type: "paragraph",
+        text: "Take the photos. Record the condition. Keep the evidence. Before you need it.",
+      },
+    ],
+  },
+  {
+    slug: "dubai-rental-mistakes-you-make-only-once",
+    tag: "Article",
+    title: "The Dubai Rental Mistakes You Usually Make Only Once",
+    cardTitle: "The Dubai Rental Mistakes You Usually Make Only Once",
+    dek: "Moving to Dubai? Here are a few rental lessons most people learn the hard way — before they know to look for them.",
+    cardDescription: "A few rental lessons you'll probably learn the hard way — unless someone tells you first.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "Moving to Dubai? Here are a few rental lessons you'll probably learn the hard way.",
+      },
+      {
+        type: "list",
+        items: [
+          "The rent isn't the real cost. Deposit, agency fee, Ejari, DEWA, moving costs… budget for the full move-in amount.",
+          "You're renting a building, not just an apartment. Check the parking, elevators, maintenance, noise and facilities before you fall in love with the unit.",
+          "\"Maintenance included\" doesn't mean everything is covered. Ask exactly what the landlord handles and what you're responsible for.",
+          "Don't rush the handover. That tiny stain, loose handle or damaged cabinet may seem irrelevant on Day 1 — six months later, you may wish you had documented it.",
+          "Test the commute before signing. A 20-minute drive on Google Maps can become a very different experience at 8 AM.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "And perhaps the biggest lesson: never assume something is \"understood.\" Get it recorded.",
+      },
+      {
+        type: "paragraph",
+        text: "Dubai's rental market moves fast. Apartments get rented, keys get handed over, and people move in within days.",
+      },
+      {
+        type: "paragraph",
+        text: "Take a little extra time at the beginning. It can save you a lot of frustration later.",
+      },
+    ],
+  },
+  {
+    slug: "camera-roll-trap-handover-photos",
+    tag: "Article",
+    title: "The \"Camera Roll\" Trap: Why Your Handover Photos Fail at Move-Out",
+    metaTitle: "The Camera-Roll Trap: Why Handover Photos Fail",
+    cardTitle: "The \"Camera Roll\" Trap: Why Your Handover Photos Fail at Move-Out",
+    dek: "Thirty quick phone photos at move-in feel like protection. Twelve months later, when money is on the line, they usually aren't.",
+    cardDescription: "Thirty quick phone photos at move-in feel like protection. A year later, they usually aren't.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "Everyone does it at move-in. You walk through the apartment, take 30 quick photos on your phone, drop them into a WhatsApp chat, and assume you're protected.",
+      },
+      {
+        type: "paragraph",
+        text: "Fast forward 12 months. Your lease ends, and the landlord flags three deep floor scratches during the final walkthrough. You open your camera roll to prove they were pre-existing, only to hit a wall:",
+      },
+      {
+        type: "list",
+        items: [
+          "The photo is too wide to show the floor details",
+          "The lighting is too dark to prove depth or age",
+          "The image timestamp was stripped when sent over messaging apps",
+          "You can't remember if \"IMG_4092\" was taken in the main bedroom or the guest hallway",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "What felt like solid proof on Day 1 becomes completely useless when money is on the line.",
+      },
+      { type: "heading", text: "Snapshots vs. real evidence" },
+      {
+        type: "paragraph",
+        text: "Taking photos feels proactive, but raw phone snapshots rarely settle a dispute.",
+      },
+      { type: "subheading", text: "Casual phone snapshots" },
+      {
+        type: "paragraph",
+        text: "Get buried in personal chat histories, rely on blurry wide-angle shots, lack verified date stamps, and end up as a disorganized mess of generic file names.",
+      },
+      { type: "subheading", text: "Structured condition records" },
+      {
+        type: "paragraph",
+        text: "Live in one centralized file, feature high-resolution close-ups tied to specific items, include tamper-proof timestamping, and follow a clear, room-by-room layout.",
+      },
+      { type: "heading", text: "The high cost of informal proof" },
+      { type: "paragraph", text: "When handover records are vague, everyone loses:" },
+      {
+        type: "list",
+        items: [
+          "Tenants lose security deposits for damage they didn't cause — simply because they can't prove it was already there",
+          "Landlords absorb repair costs for actual tenant damage because they lack a clear \"before\" record",
+          "Property managers waste hours digging through old WhatsApp threads trying to settle a minor deposit dispute",
+        ],
+      },
+      { type: "heading", text: "The bottom line" },
+      {
+        type: "paragraph",
+        text: "A property handover shouldn't be a guessing game. If a defect isn't clearly documented, timestamped, and organized at move-in, it doesn't exist as evidence at move-out.",
+      },
+      {
+        type: "paragraph",
+        text: "Ditching the messy camera-roll dump for a clean, structured condition report turns exit day from an awkward negotiation into a 5-minute sign-off.",
+      },
+    ],
+  },
 ];
