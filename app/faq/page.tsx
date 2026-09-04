@@ -13,9 +13,20 @@ export const metadata: Metadata = buildPageMetadata({
   path: "/faq",
 });
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: GENERAL_FAQ.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
+  })),
+};
+
 export default function FaqPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Navbar />
       <main className="flex flex-col bg-off-white">
         <section className="blueprint-grid w-full bg-off-white pt-10 pb-8 lg:pt-14">

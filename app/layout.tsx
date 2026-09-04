@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description,
     url: "https://meinspect.com",
     siteName: "MeInspect",
-    images: [{ url: "/logo.png", width: 512, height: 512 }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     locale: "en_US",
     type: "website",
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/logo.png"],
+    images: ["/og-image.png"],
   },
 };
 

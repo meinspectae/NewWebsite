@@ -8,6 +8,8 @@ export interface BlogGuideMeta {
   dek: string;
   cardTitle: string;
   cardDescription: string;
+  publishedDate: string; // ISO date this article went live at its /resources URL — used for Article JSON-LD
+  image?: string; // path under /public for Article JSON-LD; falls back to /og-image.png
   blocks: ArticleBlock[];
 }
 
@@ -20,6 +22,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     cardTitle: "Stop Saying \"Trust the Landlord or Tenant.\" Build a System That Survives Distrust",
     dek: "Most Dubai deposit disputes aren't caused by bad faith — they're caused by a fuzzy handover process. Here's what a distrust-proof system actually looks like.",
     cardDescription: "Most deposit disputes aren't caused by bad faith — they're caused by a fuzzy process. Here's what a distrust-proof system looks like.",
+    publishedDate: "2026-08-24",
     blocks: [
       { type: "paragraph", text: "In Dubai, deposits aren't won with goodwill. They're won with evidence." },
       { type: "paragraph", text: "At the Rental Dispute Centre, the strongest cases share the same pattern:" },
@@ -87,9 +90,11 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     slug: "credibility-your-most-valuable-listing",
     tag: "Article",
     title: "In Real Estate, Credibility Is Your Most Valuable Listing",
+    metaTitle: "Credibility Is Your Most Valuable Listing",
     cardTitle: "In Real Estate, Credibility Is Your Most Valuable Listing",
     dek: "Buyers, tenants, and landlords have more information than ever. What they're actually looking for is confidence — and that's built with documentation, not promises.",
     cardDescription: "What buyers, tenants, and landlords are really looking for — and it isn't the property listing.",
+    publishedDate: "2026-08-24",
     blocks: [
       {
         type: "paragraph",
@@ -138,6 +143,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     cardTitle: "The Rental Market Doesn't Have a Trust Problem. It Has a Timing Problem.",
     dek: "Most rental disputes aren't about bad faith — they're about when evidence gets captured. Why 'predictive' documentation changes the outcome, not just 'digital.'",
     cardDescription: "Why 'predictive' documentation changes the outcome of a dispute — not just 'digital' documentation.",
+    publishedDate: "2026-08-24",
     blocks: [
       {
         type: "paragraph",
@@ -201,6 +207,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     cardTitle: "The Missing Layer in PropTech's AI Race",
     dek: "AI can interpret evidence. It can't replace it. Why the real asset in PropTech isn't the model — it's the timestamped record underneath it.",
     cardDescription: "AI can interpret evidence. It can't replace it. Why the real asset isn't the model.",
+    publishedDate: "2026-08-24",
     blocks: [
       {
         type: "paragraph",
@@ -241,6 +248,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     cardTitle: "Beyond the Handshake: Why Real Estate Needs Its VeriSign Moment",
     dek: "E-commerce got a trust signal with the SSL padlock. Banking got one with two-factor authentication. Real estate is still running on handshakes and blurry photos.",
     cardDescription: "E-commerce got the SSL padlock. Banking got 2FA. Real estate is still running on handshakes.",
+    publishedDate: "2026-08-24",
     blocks: [
       {
         type: "paragraph",
@@ -315,6 +323,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     cardTitle: "You Spent Millions Building Your Real Estate Brand. How Does Your Handover Process Look?",
     dek: "Sleek offices, elite marketing, seamless client acquisition — and then a dog-eared paper clipboard at the key handover. Why operational execution has to match the brand.",
     cardDescription: "Sleek offices, elite marketing — and then a dog-eared paper clipboard at the key handover.",
+    publishedDate: "2026-08-24",
     blocks: [
       {
         type: "paragraph",
@@ -389,6 +398,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     cardTitle: "Why Digital Handovers Are Replacing Paper Inspection Checklists in Modern Real Estate",
     dek: "The clipboard, the carbonless copy form, the smudged ink — paper checklists are becoming a liability. Here's the case for digital condition reports.",
     cardDescription: "The clipboard and carbonless copy form are becoming a liability. Here's the case for going digital.",
+    publishedDate: "2026-08-24",
     blocks: [
       {
         type: "paragraph",
@@ -454,6 +464,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     cardTitle: "How Long Does a Landlord Have to Refund Your Deposit in Dubai?",
     dek: "What UAE tenancy practice actually says about deposit refund timing, and what to do if a landlord goes quiet after move-out.",
     cardDescription: "What UAE tenancy practice actually says about deposit refund timing, and what to do if a landlord goes quiet.",
+    publishedDate: "2026-08-24",
     blocks: [
       {
         type: "paragraph",
@@ -479,6 +490,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     cardTitle: "Dubai Landlords: Your Biggest Headache Isn't the Rent — It's the Paperwork",
     dek: "With more supply and a cooling market, tenants have more leverage in 2026. That makes the operational details — notices, contracts, documentation — the difference between a smooth renewal and a costly dispute.",
     cardDescription: "In a rebalancing market, the landlords who win treat tenancy as a process business, not just a price negotiation.",
+    publishedDate: "2026-09-03",
     blocks: [
       {
         type: "paragraph",
@@ -524,6 +536,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     cardTitle: "\"We're Deducting This From Your Deposit.\"",
     dek: "You paid AED 5,000. The refund is AED 3,200. Now you're staring at a list of deductions, trying to remember what the apartment actually looked like a year ago.",
     cardDescription: "It's not always about who's right at move-out. It's about who can prove it.",
+    publishedDate: "2026-09-02",
     blocks: [
       {
         type: "paragraph",
@@ -565,9 +578,11 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     slug: "dubai-rental-mistakes-you-make-only-once",
     tag: "Article",
     title: "The Dubai Rental Mistakes You Usually Make Only Once",
+    metaTitle: "Dubai Rental Mistakes You Usually Make Only Once",
     cardTitle: "The Dubai Rental Mistakes You Usually Make Only Once",
     dek: "Moving to Dubai? Here are a few rental lessons most people learn the hard way — before they know to look for them.",
     cardDescription: "A few rental lessons you'll probably learn the hard way — unless someone tells you first.",
+    publishedDate: "2026-08-29",
     blocks: [
       {
         type: "paragraph",
@@ -605,6 +620,7 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     cardTitle: "The \"Camera Roll\" Trap: Why Your Handover Photos Fail at Move-Out",
     dek: "Thirty quick phone photos at move-in feel like protection. Twelve months later, when money is on the line, they usually aren't.",
     cardDescription: "Thirty quick phone photos at move-in feel like protection. A year later, they usually aren't.",
+    publishedDate: "2026-08-24",
     blocks: [
       {
         type: "paragraph",

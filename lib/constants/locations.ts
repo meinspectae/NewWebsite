@@ -77,7 +77,16 @@ export const LOCATIONS: Location[] = [
     metaDescription:
       "Move-in and move-out condition reports for Business Bay apartments — timestamped, GPS-verified, and signed by all parties.",
     heroDek: "Document your Business Bay unit's condition with a report both tenant and landlord can trust.",
-    localPoints: [],
-    faqs: [],
+    localPoints: [
+      "Many Business Bay towers mix short-term holiday-home units with long-term residential leases in the same building, which means faster turnover between occupants — a signed condition report at both ends is worth having on hand more often than in a typical residential-only tower.",
+      "Canal-facing units get direct sun and humidity off the water for a large part of the day — worth documenting window seals, balcony flooring, and any canal-side furnishings specifically at move-in.",
+    ],
+    faqs: [
+      {
+        question: "Is a Business Bay inspection different for holiday-home units versus standard leases?",
+        answer:
+          "The report itself is the same room-by-room format either way. What changes is frequency — holiday-home and short-term units turn over far more often, so it's worth running an inspection at every changeover rather than only at the start and end of a long lease.",
+      },
+    ],
   },
 ];

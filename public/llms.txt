@@ -4,3 +4,34 @@
 
 ## Product
 - [Homepage](https://meinspect.com): Overview of MeInspect's property condition reporting service for tenants and landlords.
+- [For Tenants](https://meinspect.com/for-tenants): How MeInspect protects a tenant's security deposit with move-in/move-out evidence.
+- [For Landlords](https://meinspect.com/for-landlords): How MeInspect gives landlords a verifiable condition record for every tenancy.
+- [For Agents](https://meinspect.com/for-agents): How real estate agents use MeInspect during handovers.
+- [For Holiday Homes](https://meinspect.com/for-holiday-homes): Condition reporting for short-term rental turnovers.
+- [Pricing](https://meinspect.com/pricing): MeInspect's pricing tiers.
+- [FAQ](https://meinspect.com/faq): Answers to common questions about how inspections and reports work.
+
+## Guides
+- [Move-In Inspection Checklist: The Complete Guide](https://meinspect.com/resources/move-in-checklist): Everything to document before you hand over the keys — room by room, with what counts as good evidence.
+- [How to Win a Deposit Dispute: Evidence That Works](https://meinspect.com/resources/deposit-dispute-guide): What actually convinces a landlord, tenant, or adjudicator — and the evidence that doesn't.
+- [Free Property Condition Report Template](https://meinspect.com/resources/report-template): A downloadable, room-by-room template you can use for your own move-in or move-out inspection.
+- [Move-Out Inspection Checklist: How to Protect Your Deposit](https://meinspect.com/resources/move-out-checklist): What to document at move-out, and why comparing it against your move-in report is what actually protects your deposit.
+
+## Articles
+- [Stop Saying "Trust the Landlord or Tenant." Build a System That Survives Distrust](https://meinspect.com/resources/distrust-proof-handover-system): Most deposit disputes aren't caused by bad faith — they're caused by a fuzzy process. Here's what a distrust-proof system looks like.
+- [In Real Estate, Credibility Is Your Most Valuable Listing](https://meinspect.com/resources/credibility-your-most-valuable-listing): What buyers, tenants, and landlords are really looking for — and it isn't the property listing.
+- [The Rental Market Doesn't Have a Trust Problem. It Has a Timing Problem.](https://meinspect.com/resources/rental-market-timing-problem): Why 'predictive' documentation changes the outcome of a dispute — not just 'digital' documentation.
+- [The Missing Layer in PropTech's AI Race](https://meinspect.com/resources/missing-layer-proptech-ai-race): AI can interpret evidence. It can't replace it. Why the real asset isn't the model.
+- [Beyond the Handshake: Why Real Estate Needs Its VeriSign Moment](https://meinspect.com/resources/real-estate-verisign-moment): E-commerce got the SSL padlock. Banking got 2FA. Real estate is still running on handshakes.
+- [You Spent Millions Building Your Real Estate Brand. How Does Your Handover Process Look?](https://meinspect.com/resources/premium-brand-handover-gap): Sleek offices, elite marketing — and then a dog-eared paper clipboard at the key handover.
+- [Why Digital Handovers Are Replacing Paper Inspection Checklists in Modern Real Estate](https://meinspect.com/resources/digital-handovers-replacing-paper-checklists): The clipboard and carbonless copy form are becoming a liability. Here's the case for going digital.
+- [How Long Does a Landlord Have to Refund Your Deposit in Dubai?](https://meinspect.com/resources/dubai-deposit-refund-timeline): What UAE tenancy practice actually says about deposit refund timing, and what to do if a landlord goes quiet.
+- [Dubai Landlords: Your Biggest Headache Isn't the Rent — It's the Paperwork](https://meinspect.com/resources/dubai-landlords-headache-is-paperwork): In a rebalancing market, the landlords who win treat tenancy as a process business, not just a price negotiation.
+- ["We're Deducting This From Your Deposit."](https://meinspect.com/resources/were-deducting-from-your-deposit): It's not always about who's right at move-out. It's about who can prove it.
+- [The Dubai Rental Mistakes You Usually Make Only Once](https://meinspect.com/resources/dubai-rental-mistakes-you-make-only-once): A few rental lessons you'll probably learn the hard way — unless someone tells you first.
+- [The "Camera Roll" Trap: Why Your Handover Photos Fail at Move-Out](https://meinspect.com/resources/camera-roll-trap-handover-photos): Thirty quick phone photos at move-in feel like protection. A year later, they usually aren't.
+
+## Locations
+- [Property Inspections in Dubai Marina](https://meinspect.com/locations/dubai-marina): Move-in and move-out condition reports for Dubai Marina apartments — GPS-tagged photos, timestamps, and digital sign-off for tenants and landlords.
+- [Property Inspections in Downtown Dubai](https://meinspect.com/locations/downtown-dubai): Condition reports for Downtown Dubai apartments — photo evidence, GPS verification, and signed reports tenants and landlords can rely on.
+- [Property Inspections in Business Bay](https://meinspect.com/locations/business-bay): Move-in and move-out condition reports for Business Bay apartments — timestamped, GPS-verified, and signed by all parties.

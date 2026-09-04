@@ -56,8 +56,15 @@ export default async function BlogGuidePage({ params }: ArticlePageParams) {
     "@type": "Article",
     headline: guide.title,
     description: guide.cardDescription,
-    author: { "@type": "Organization", name: "MeInspect" },
-    publisher: { "@type": "Organization", name: "MeInspect" },
+    image: [`https://meinspect.com${guide.image ?? "/og-image.png"}`],
+    datePublished: guide.publishedDate,
+    dateModified: guide.publishedDate,
+    author: { "@type": "Organization", name: "MeInspect", url: "https://meinspect.com" },
+    publisher: {
+      "@type": "Organization",
+      name: "MeInspect",
+      logo: { "@type": "ImageObject", url: "https://meinspect.com/logo.png" },
+    },
     mainEntityOfPage: `https://meinspect.com/resources/${guide.slug}`,
   };
 
