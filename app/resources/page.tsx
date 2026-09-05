@@ -12,7 +12,7 @@ import { BLOG_GUIDES } from "@/lib/constants/blogGuides";
 import { LOCATIONS } from "@/lib/constants/locations";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Resource Hub — Checklists, Deposit Guides & Templates | MeInspect",
+  title: "Checklists, Deposit Guides & Templates | MeInspect",
   description: "Free, practical resources for documenting a rental property properly — checklists, dispute guides, and templates.",
   path: "/resources",
 });

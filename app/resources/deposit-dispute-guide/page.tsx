@@ -9,7 +9,7 @@ import { ClosingCta } from "@/components/marketing/ClosingCta";
 import { DEPOSIT_DISPUTE_BLOCKS, DEPOSIT_DISPUTE_DISCLAIMER } from "@/lib/constants/guides";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "How to Win a Deposit Dispute: Evidence That Works | MeInspect",
+  title: "How to Win a Deposit Dispute | MeInspect",
   description: "What actually convinces a landlord, tenant, or adjudicator — and the evidence that doesn't.",
   path: "/resources/deposit-dispute-guide",
 });

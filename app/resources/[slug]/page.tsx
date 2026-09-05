@@ -68,9 +68,24 @@ export default async function BlogGuidePage({ params }: ArticlePageParams) {
     mainEntityOfPage: `https://meinspect.com/resources/${guide.slug}`,
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://meinspect.com" },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: guide.title,
+        item: `https://meinspect.com/resources/${guide.slug}`,
+      },
+    ],
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <Navbar />
       <main className="flex flex-col bg-off-white">
         <GuideHeader breadcrumb={guide.title} tag={guide.tag} title={guide.title} dek={guide.dek} />

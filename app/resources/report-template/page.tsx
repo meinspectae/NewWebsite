@@ -11,7 +11,7 @@ import { ClosingCta } from "@/components/marketing/ClosingCta";
 import { REPORT_TEMPLATE_INTRO, REPORT_TEMPLATE_DISCLAIMER } from "@/lib/constants/guides";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Free Property Condition Report Template (Downloadable PDF) | MeInspect",
+  title: "Free Property Condition Report Template | MeInspect",
   description: "A downloadable, room-by-room template you can use for your own move-in or move-out inspection.",
   path: "/resources/report-template",
 });
