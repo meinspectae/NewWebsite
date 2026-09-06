@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { Breadcrumb } from "@/components/marketing/Breadcrumb";
 import { NumberedSteps } from "@/components/marketing/NumberedSteps";
 import { MeinspectorForm } from "@/components/careers/MeinspectorForm";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Become a MeInspector | MeInspect",
   description: "Join our network of certified Meinspectors and carry out professional property condition inspections across the UAE.",
-};
+  path: "/careers/meinspector",
+});
 
 const STEPS = [
   { number: 1, text: "Apply: Submit your details below. We review every application and get back to you within a few days." },

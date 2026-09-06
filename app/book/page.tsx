@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
 import { UserCheck } from "lucide-react";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { PageHero } from "@/components/marketing/PageHero";
 import { ChecklistSection } from "@/components/marketing/ChecklistSection";
 import { ClosingCta } from "@/components/marketing/ClosingCta";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Hire a MeInspector | MeInspect",
   description: "A trained Meinspector visits and does the walkthrough for you — ideal for landlords, agencies & property managers.",
-};
+  path: "/book",
+});
 
 const FEATURES = [
   "A trained Meinspector visits and does the walkthrough for you",

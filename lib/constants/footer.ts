@@ -16,6 +16,8 @@ export const FOOTER_LINK_GROUPS: FooterLinkGroup[] = [
       { label: "For Landlords", href: "/for-landlords" },
       { label: "For Agents & Property Managers", href: "/for-agents" },
       { label: "For Holiday Homes", href: "/for-holiday-homes" },
+      { label: "Pricing", href: "/pricing" },
+      { label: "Hire a MeInspector", href: "/book" },
     ],
   },
   {
@@ -23,6 +25,7 @@ export const FOOTER_LINK_GROUPS: FooterLinkGroup[] = [
     links: [
       { label: "Blog & Guides", href: "/resources" },
       { label: "Move-In Checklist", href: "/resources/move-in-checklist" },
+      { label: "Move-Out Checklist", href: "/resources/move-out-checklist" },
       { label: "Deposit Dispute Guide", href: "/resources/deposit-dispute-guide" },
       { label: "Report Template", href: "/resources/report-template" },
     ],

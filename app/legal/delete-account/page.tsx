@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { Breadcrumb } from "@/components/marketing/Breadcrumb";
 import { NumberedSteps } from "@/components/marketing/NumberedSteps";
 import { SimpleTable } from "@/components/marketing/SimpleTable";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Delete Your Account — MeInspect",
   description: "How to request deletion of your MeInspect account and what happens to your data.",
-};
+  path: "/legal/delete-account",
+});
 
 const STEPS = [
   {

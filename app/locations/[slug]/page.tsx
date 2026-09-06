@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
@@ -30,6 +31,15 @@ function getLocation(slug: string) {
   return LOCATIONS.find((location) => location.slug === slug);
 }
 
+// Every location page previously had exactly one inbound internal link
+// (from /resources) and never linked to any other location — Semrush
+// flagged this class of page for having only one incoming link. Linking
+// each location page to its siblings gives them real internal link
+// equity without needing a dedicated /locations index page yet.
+function getOtherLocations(slug: string) {
+  return LOCATIONS.filter((location) => location.slug !== slug && location.localPoints.length > 0);
+}
+
 export async function generateMetadata({ params }: LocationPageParams): Promise<Metadata> {
   const { slug } = await params;
   const location = getLocation(slug);
@@ -57,6 +67,7 @@ export default async function LocationPage({ params }: LocationPageParams) {
   const { slug } = await params;
   const location = getLocation(slug);
   if (!location) notFound();
+  const otherLocations = getOtherLocations(slug);
 
   const serviceJsonLd = {
     "@context": "https://schema.org",
@@ -126,6 +137,23 @@ export default async function LocationPage({ params }: LocationPageParams) {
 
         {location.faqs.length > 0 && (
           <FaqAccordion eyebrow="FAQ" title={`Questions about ${location.area}`} items={location.faqs} />
+        )}
+
+        {otherLocations.length > 0 && (
+          <Section eyebrow="Other Areas" title="We also cover" tone="white">
+            <ul className="flex flex-wrap gap-3">
+              {otherLocations.map((other) => (
+                <li key={other.slug}>
+                  <Link
+                    href={`/locations/${other.slug}`}
+                    className="inline-flex rounded-full border border-dark/10 px-4 py-2 text-[14px] font-medium text-dark transition-colors hover:border-primary-blue hover:text-primary-blue"
+                  >
+                    {other.area}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Section>
         )}
 
         <ClosingCta

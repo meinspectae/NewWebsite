@@ -48,8 +48,19 @@ export default async function BlogGuidePage({ params }: ArticlePageParams) {
   const guide = getGuide(slug);
   if (!guide) notFound();
 
-  // Suggest two other articles to keep reading, excluding this one.
-  const others = BLOG_GUIDES.filter((g) => g.slug !== guide.slug).slice(0, 2);
+  // Suggest two other articles to keep reading. Previously this was
+  // `BLOG_GUIDES.filter(g => g.slug !== guide.slug).slice(0, 2)`, which
+  // always resolves to the same first two guides in the array for every
+  // guide from position 3 onward — meaning 9 of the 12 guides never
+  // received a "keep reading" link from any sibling article and had
+  // exactly one inbound internal link (from /resources), which is what
+  // Semrush flagged. Picking the next two guides in a circular order
+  // instead means every guide both links out to two others and receives
+  // links back from two others, however many guides get added later.
+  const currentIndex = BLOG_GUIDES.findIndex((g) => g.slug === guide.slug);
+  const others = [1, 2].map(
+    (offset) => BLOG_GUIDES[(currentIndex + offset) % BLOG_GUIDES.length]
+  );
 
   const articleJsonLd = {
     "@context": "https://schema.org",

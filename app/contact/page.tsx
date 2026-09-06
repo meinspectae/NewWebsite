@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { Breadcrumb } from "@/components/marketing/Breadcrumb";
 import { ContactForm } from "@/components/contact/ContactForm";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Contact | MeInspect",
   description: "Questions about the app, agency pricing, or a partnership? Get in touch with MeInspect.",
-};
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (
