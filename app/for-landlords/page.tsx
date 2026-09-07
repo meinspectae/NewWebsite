@@ -26,9 +26,20 @@ export const metadata: Metadata = buildPageMetadata({
   path: "/for-landlords",
 });
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: LANDLORDS_FAQ.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
+  })),
+};
+
 export default function ForLandlordsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Navbar />
       <main className="flex flex-col bg-off-white">
         <PageHero {...LANDLORDS_HERO} />

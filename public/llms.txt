@@ -10,6 +10,11 @@
 - [For Holiday Homes](https://meinspect.com/for-holiday-homes): Condition reporting for short-term rental turnovers.
 - [Pricing](https://meinspect.com/pricing): MeInspect's pricing tiers.
 - [FAQ](https://meinspect.com/faq): Answers to common questions about how inspections and reports work.
+- [About](https://meinspect.com/about): Who MeInspect is and how GPS-tagged, timestamped, signed reports work.
+- [Download the App](https://meinspect.com/start): Get MeInspect on the App Store or Google Play.
+- [Hire a MeInspector](https://meinspect.com/book): Have a trained Meinspector carry out the walkthrough for you.
+- [Contact](https://meinspect.com/contact): Get in touch about the app, agency pricing, or a partnership.
+- [Become a MeInspector](https://meinspect.com/careers/meinspector): Join MeInspect's network of certified inspectors in the UAE.
 
 ## Guides
 - [Move-In Inspection Checklist: The Complete Guide](https://meinspect.com/resources/move-in-checklist): Everything to document before you hand over the keys — room by room, with what counts as good evidence.

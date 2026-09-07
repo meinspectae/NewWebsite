@@ -54,6 +54,16 @@ const organizationJsonLd = {
   name: "MeInspect",
   url: "https://meinspect.com",
   logo: "https://meinspect.com/logo.png",
+  description,
+  areaServed: {
+    "@type": "Country",
+    name: "United Arab Emirates",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "hello@meinspect.com",
+    contactType: "customer support",
+  },
   sameAs: [
     "https://www.linkedin.com/company/meinspect/",
     "https://www.instagram.com/me.inspect",
