@@ -8,8 +8,8 @@ import { FeatureGrid } from "@/components/marketing/FeatureGrid";
 import { ClosingCta } from "@/components/marketing/ClosingCta";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "About | MeInspect",
-  description: "MeInspect protects landlords and tenants equally with GPS-tagged, timestamped, signed property condition reports.",
+  title: "About Us | Simplifying Property Handovers | MeInspect",
+  description: "Learn about MeInspect. Our mission is to eliminate rental deposit disputes by empowering tenants, landlords, and property managers with verified photo reports.",
   path: "/about",
 });
 

@@ -20,9 +20,9 @@ import {
 } from "@/lib/constants/forLandlords";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Landlord Inspection Checklist & Reports | MeInspect",
+  title: "Property Condition Reports for Landlords | MeInspect",
   description:
-    "A landlord inspection checklist with GPS-tagged photos and three-party sign-off — turn disputes into a settled fact before the tenant even moves in.",
+    "Make property condition clear. Generate GPS-verified PDF inspection reports, log keys and access, and protect your asset from move-in to move-out handovers.",
   path: "/for-landlords",
 });
 

@@ -20,9 +20,9 @@ import {
 } from "@/lib/constants/forTenants";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Property Condition Reports for Tenants | MeInspect",
+  title: "Property Condition Reports for Tenants | Protect Deposit",
   description:
-    "A tenant move-in checklist with GPS-tagged, timestamped photos — the single best thing you can do to protect your deposit.",
+    "Protect what belongs to you with MeInspect. Document pre-existing damage, perform fair inspections, and secure your deposit with GPS-verified photo reports.",
   path: "/for-tenants",
 });
 

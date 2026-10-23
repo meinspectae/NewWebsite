@@ -6,8 +6,8 @@ import { Breadcrumb } from "@/components/marketing/Breadcrumb";
 import { ContactForm } from "@/components/contact/ContactForm";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Contact | MeInspect",
-  description: "Questions about the app, agency pricing, or a partnership? Get in touch with MeInspect.",
+  title: "Contact Us | MeInspect Property Condition Reports",
+  description: "Get in touch with the MeInspect team. Have questions about property condition reports, bookings, or custom plans? Contact us today for support and guidance.",
   path: "/contact",
 });
 

@@ -6,8 +6,8 @@ import { LegalArticle } from "@/components/marketing/LegalArticle";
 import { TERMS_SECTIONS } from "@/lib/constants/legal";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Terms of Use — MeInspect",
-  description: "The terms governing your use of the MeInspect app and website.",
+  title: "Terms of Service & User Agreement | MeInspect Legal",
+  description: "Read the MeInspect Terms of Service. Review our user agreement, legal guidelines, and terms governing the use of our property condition report app and services.",
   path: "/legal/terms",
 });
 

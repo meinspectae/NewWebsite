@@ -9,8 +9,8 @@ import { ArrowRight } from "lucide-react";
 import { PRICING_DETAIL_TIERS } from "@/lib/constants/pricingDetail";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Pricing | MeInspect",
-  description: "Pay only for the report. The app, the camera, the walkthrough, and the signatures are all included.",
+  title: "Property Condition Report Costs & Pricing | MeInspect",
+  description: "Start an inspection today. Choose Do It Yourself reports or hire a MeInspector to photograph rooms, log evidence, and generate verified PDF property reports.",
   path: "/pricing",
 });
 

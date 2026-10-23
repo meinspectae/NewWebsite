@@ -5,6 +5,7 @@ export interface BlogGuideMeta {
   tag: string;
   title: string;
   metaTitle?: string; // shorter version for <title>/og:title when the headline itself runs long
+  appendBrandToTitle?: boolean; // defaults to true; false keeps an approved SEO title exact
   dek: string;
   cardTitle: string;
   cardDescription: string;
@@ -139,7 +140,8 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     slug: "rental-market-timing-problem",
     tag: "Article",
     title: "The Rental Market Doesn't Have a Trust Problem. It Has a Timing Problem.",
-    metaTitle: "The Rental Market's Real Problem Is Timing, Not Trust",
+    metaTitle: "Solving the Rental Market Timing Problem | Handover Guide",
+    appendBrandToTitle: false,
     cardTitle: "The Rental Market Doesn't Have a Trust Problem. It Has a Timing Problem.",
     dek: "Most rental disputes aren't about bad faith — they're about when evidence gets captured. Why 'predictive' documentation changes the outcome, not just 'digital.'",
     cardDescription: "Why 'predictive' documentation changes the outcome of a dispute — not just 'digital' documentation.",
@@ -394,7 +396,8 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     slug: "digital-handovers-replacing-paper-checklists",
     tag: "Article",
     title: "Why Digital Handovers Are Replacing Paper Inspection Checklists in Modern Real Estate",
-    metaTitle: "Why Digital Handovers Are Replacing Paper Checklists",
+    metaTitle: "Digital Property Handovers Replacing Paper Checklists",
+    appendBrandToTitle: false,
     cardTitle: "Why Digital Handovers Are Replacing Paper Inspection Checklists in Modern Real Estate",
     dek: "The clipboard, the carbonless copy form, the smudged ink — paper checklists are becoming a liability. Here's the case for digital condition reports.",
     cardDescription: "The clipboard and carbonless copy form are becoming a liability. Here's the case for going digital.",
@@ -486,7 +489,8 @@ export const BLOG_GUIDES: BlogGuideMeta[] = [
     slug: "dubai-landlords-headache-is-paperwork",
     tag: "Article",
     title: "Dubai Landlords: Your Biggest Headache Isn't the Rent — It's the Paperwork",
-    metaTitle: "A Dubai Landlord's Real Headache Is the Paperwork",
+    metaTitle: "Why Dubai Landlords Are Ditching Manual Inspection Forms",
+    appendBrandToTitle: false,
     cardTitle: "Dubai Landlords: Your Biggest Headache Isn't the Rent — It's the Paperwork",
     dek: "With more supply and a cooling market, tenants have more leverage in 2026. That makes the operational details — notices, contracts, documentation — the difference between a smooth renewal and a costly dispute.",
     cardDescription: "In a rebalancing market, the landlords who win treat tenancy as a process business, not just a price negotiation.",

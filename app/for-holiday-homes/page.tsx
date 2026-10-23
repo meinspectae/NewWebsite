@@ -18,8 +18,8 @@ import {
 } from "@/lib/constants/forHolidayHomes";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Check-In/Check-Out Reports for Holiday Homes | MeInspect",
-  description: "Fast check-in and check-out condition reports between every guest, built for short-term rental turnover.",
+  title: "Property Condition Reports for Holiday Homes | MeInspect",
+  description: "Ensure accountability across guest stays. Photograph rooms, log keys and access, collect digital signatures, and generate time-stamped PDF inspection reports.",
   path: "/for-holiday-homes",
 });
 

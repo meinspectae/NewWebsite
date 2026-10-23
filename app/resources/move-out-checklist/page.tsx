@@ -9,9 +9,9 @@ import { ClosingCta } from "@/components/marketing/ClosingCta";
 import { MOVE_OUT_CHECKLIST_BLOCKS, GUIDE_DISCLAIMER } from "@/lib/constants/guides";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Move-Out Checklist: Protect Your Deposit | MeInspect",
+  title: "Move-Out Checklist for Tenants & Landlords | MeInspect",
   description:
-    "What to document at move-out, and why comparing it against your move-in report is what actually protects your deposit.",
+    "Download our complete move-out checklist. Compare handover condition, record utility readings, and generate GPS-verified photo reports for deposit return.",
   path: "/resources/move-out-checklist",
 });
 

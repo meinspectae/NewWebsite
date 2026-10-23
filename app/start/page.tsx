@@ -7,8 +7,8 @@ import { Breadcrumb } from "@/components/marketing/Breadcrumb";
 import { StoreBadges } from "@/components/hero/StoreBadges";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Download MeInspect | App Store & Google Play | MeInspect",
-  description: "MeInspect is live on the App Store and Google Play. Download free and start your first property condition report today.",
+  title: "Create a Property Condition Report | Start with MeInspect",
+  description: "Begin your move-in or move-out inspection today. Add property details, capture timestamped photo evidence, sign digitally, and share verified PDF reports.",
   path: "/start",
 });
 
