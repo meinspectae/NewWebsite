@@ -8,8 +8,8 @@ import { ChecklistSection } from "@/components/marketing/ChecklistSection";
 import { ClosingCta } from "@/components/marketing/ClosingCta";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Hire a MeInspector | MeInspect",
-  description: "A trained Meinspector visits and does the walkthrough for you — ideal for landlords, agencies & property managers.",
+  title: "Book a MeInspector | Professional Property Inspection",
+  description: "Hire a MeInspector to inspect your property professionally. Ensure fair handovers, document pre-existing damage, and collect digital signatures seamlessly.",
   path: "/book",
 });
 

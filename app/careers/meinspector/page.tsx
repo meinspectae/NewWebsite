@@ -7,8 +7,8 @@ import { NumberedSteps } from "@/components/marketing/NumberedSteps";
 import { MeinspectorForm } from "@/components/careers/MeinspectorForm";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Become a MeInspector | MeInspect",
-  description: "Join our network of certified Meinspectors and carry out professional property condition inspections across the UAE.",
+  title: "Become a MeInspector | Professional Property Inspector",
+  description: "Join the MeInspect team as a professional inspector. Conduct property condition reports, capture GPS-verified evidence, and help protect landlords & tenants.",
   path: "/careers/meinspector",
 });
 

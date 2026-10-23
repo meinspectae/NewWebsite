@@ -8,8 +8,8 @@ import { ClosingCta } from "@/components/marketing/ClosingCta";
 import { GENERAL_FAQ } from "@/lib/constants/faq";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Property Inspection FAQ | MeInspect",
-  description: "Everything you need to know before your first move-in or move-out inspection.",
+  title: "Frequently Asked Questions and Support | MeInspect",
+  description: "Learn how MeInspect works for tenants and landlords. Discover answers on creating GPS-verified reports, capturing evidence, and preventing deposit disputes.",
   path: "/faq",
 });
 

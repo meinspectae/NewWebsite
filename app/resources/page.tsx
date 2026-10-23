@@ -12,8 +12,8 @@ import { BLOG_GUIDES } from "@/lib/constants/blogGuides";
 import { LOCATIONS } from "@/lib/constants/locations";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Checklists, Deposit Guides & Templates | MeInspect",
-  description: "Free, practical resources for documenting a rental property properly — checklists, dispute guides, and templates.",
+  title: "Property Inspection Resources & Checklists | MeInspect",
+  description: "Explore inspection resources, blog posts, and practical guides. Download Move-In & Move-Out Checklists, Deposit Dispute Guides, and PDF Report Templates.",
   path: "/resources",
 });
 

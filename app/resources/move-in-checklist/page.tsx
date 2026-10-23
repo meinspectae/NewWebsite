@@ -9,8 +9,8 @@ import { ClosingCta } from "@/components/marketing/ClosingCta";
 import { MOVE_IN_CHECKLIST_BLOCKS, GUIDE_DISCLAIMER } from "@/lib/constants/guides";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Move-In Inspection Checklist: The Complete Guide | MeInspect",
-  description: "Everything to document before you hand over the keys — room by room, with what counts as good evidence.",
+  title: "Move-In Checklist for Tenants & Landlords | MeInspect",
+  description: "Download our complete move-in checklist. Document pre-existing damage, log utility readings, and create GPS-verified photo reports to protect your deposit.",
   path: "/resources/move-in-checklist",
 });
 

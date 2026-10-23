@@ -31,9 +31,9 @@ export const LOCATIONS: Location[] = [
     slug: "dubai-marina",
     city: "Dubai",
     area: "Dubai Marina",
-    title: "Property Inspections in Dubai Marina | MeInspect",
+    title: "Property Condition Reports in Dubai Marina | MeInspect",
     metaDescription:
-      "Move-in and move-out condition reports for Dubai Marina apartments — GPS-tagged photos, timestamps, and digital sign-off for tenants and landlords.",
+      "Ensure fair handovers in Dubai Marina. Document pre-existing damage, log utility readings, and collect digital signatures for verified PDF photo reports.",
     heroDek:
       "Document your Dubai Marina apartment before you move a single box in or out — a signed, timestamped record protects your deposit either way. Marina turnover is fast, so having your own dated evidence matters more here than in a slower-moving building.",
     localPoints: [
@@ -58,9 +58,9 @@ export const LOCATIONS: Location[] = [
     slug: "downtown-dubai",
     city: "Dubai",
     area: "Downtown Dubai",
-    title: "Property Inspections in Downtown Dubai | MeInspect",
+    title: "Property Condition Reports in Downtown Dubai | MeInspect",
     metaDescription:
-      "Condition reports for Downtown Dubai apartments — photo evidence, GPS verification, and signed reports tenants and landlords can rely on.",
+      "Protect your security deposit and property in Downtown Dubai. Generate GPS-verified, time-stamped condition reports or hire a local MeInspector today.",
     heroDek:
       "From Burj Khalifa-adjacent towers to Old Town villas, document the property's condition before keys change hands. Downtown's mix of new-build and older stock means what counts as normal wear varies a lot by building — a report settles it either way.",
     localPoints: [
@@ -85,9 +85,9 @@ export const LOCATIONS: Location[] = [
     slug: "business-bay",
     city: "Dubai",
     area: "Business Bay",
-    title: "Property Inspections in Business Bay | MeInspect",
+    title: "Property Condition Reports in Business Bay | MeInspect",
     metaDescription:
-      "Move-in and move-out condition reports for Business Bay apartments — timestamped, GPS-verified, and signed by all parties.",
+      "Document pre-existing damage in Business Bay homes. Do It Yourself or book a local MeInspector to capture verified photo evidence and prevent deposit disputes.",
     heroDek:
       "Document your Business Bay unit's condition with a report both tenant and landlord can trust. Between the mix of short lets and long-term leases in the same towers, having your own dated record matters more here than in a purely residential building.",
     localPoints: [

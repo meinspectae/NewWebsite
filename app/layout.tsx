@@ -22,9 +22,9 @@ const caveat = Caveat({
   display: "swap",
 });
 
-const title = "MeInspect — Property Condition Reports for UAE";
+const title = "Property Condition Report App for Landlords & Tenants";
 const description =
-  "Document your property. Protect your deposit. Property condition reports with photo evidence, GPS verification, timestamps, and digital signatures.";
+  "Document pre-existing damage, log utility readings, and collect digital signatures. Generate GPS-verified property inspection reports in UAE with MeInspect.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://meinspect.com"),

@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: ArticlePageParams): Promise<M
   // Use the shorter metaTitle for <title>/social tags when the full headline
   // runs long — the H1 on the page itself still uses the full guide.title.
   const displayTitle = guide.metaTitle ?? guide.title;
-  const titleTag = `${displayTitle} | MeInspect`;
+  const titleTag = guide.appendBrandToTitle === false ? displayTitle : `${displayTitle} | MeInspect`;
 
   return {
     title: titleTag,
